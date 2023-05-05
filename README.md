@@ -28,14 +28,14 @@ There are no tests as part of this project. Instead, focus on making sure featur
 
 This project includes some existing code which will help you complete the features below.
 
-- [`src/data/data.json`](./src/data/data.json): This contains data for over 200 students. Each student multiple properties associated with them. Some important ones include:
+- [`src/data/data.json`](./src/data/data.json): This contains data for over 200 students. Each student has multiple properties associated with them. Some important ones include:
   - `id`: A unique ID associated with each student.
-  - `profilePhoto`: A randomly generated photo from [fakerface.rest](https://fakerface.rest).
-  - `cohort`: An object represent which "cohort" the student is in.
+  - `profilePhoto`: A randomly generated photo from [Random users](https://xsgames.co/randomusers/).
+  - `cohort`: An object represents which "cohort" the student is in.
 
 ## Features
 
-Each of the features below will count as 1 point towards your overall score. While there is a styled website to serve as a reference, you are not required to style the page unless the feature specifically asks you to do so.
+Each of the features below will count as 1 point toward your overall score. While there is a styled website to serve as a reference, you are not required to style the page unless the feature specifically asks you to do so.
 
 _Take careful note of the requirements._ Sometimes an image will show slightly more or slightly less than what you need to score the point.
 
