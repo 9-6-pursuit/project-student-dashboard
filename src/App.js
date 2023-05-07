@@ -2,6 +2,7 @@ import Header from "./Components/Header";
 import Sidebar from "./Components/Sidebar";
 import Students from "./Components/Students";
 import "./Components/Header.css";
+import "./Components/PageStructure.css";
 
 function App() {
   return (
