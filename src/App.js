@@ -1,11 +1,12 @@
 import Header from "./Components/Header";
 import Sidebar from "./Components/Sidebar";
 import Students from "./Components/Students";
+import "./Components/Header.css";
 
 function App() {
   return (
     <div className="student-dashboard-container">
-      <div className="hearder-row">
+      <div className="header-row">
         <div className="header">
           <Header />
         </div>
