@@ -2,8 +2,8 @@
     border: 2px solid #3c7765;
     border-radius: 5px;
     padding: 10px;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
   }
   
   .profile-image {
