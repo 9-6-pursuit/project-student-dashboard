@@ -3,6 +3,7 @@ import Sidebar from "./Components/Sidebar";
 import StudentsList from "./Components/StudentsList";
 import "./Components/Header.css";
 import "./Components/PageStructure.css";
+import data from "./data/data.json"
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Sidebar />
         </div>
         <div className="students">
-          <StudentsList />
+          <StudentsList students={data} />
         </div>
       </div>
     </div>

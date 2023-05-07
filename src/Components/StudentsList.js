@@ -1,8 +1,15 @@
 import React from "react";
+import StudentCard from "./StudentCard.js";
 
-function StudentsList() {
+function StudentsList({students}) {
   return (
-  <p>Students</p>
+    <div className="student-card">
+      {students.map((student) => {
+        return (
+        <StudentCard student={student} />
+         )
+      })}
+    </div>
   );
 }
 
