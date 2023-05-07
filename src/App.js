@@ -3,7 +3,9 @@ import Sidebar from "./Components/Sidebar";
 import StudentsList from "./Components/StudentsList";
 import "./Components/Header.css";
 import "./Components/PageStructure.css";
+import "./Components/StudentCard.css"
 import data from "./data/data.json"
+
 
 function App() {
   return (
