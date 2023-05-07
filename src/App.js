@@ -1,8 +1,13 @@
+import Header from './Components/Header';
+import Sidebar from './Components/Sidebar';
+import Students from './Components/Students';
 
 function App() {
   return (
     <div>
-      <h1>Student Dashboard</h1>
+      <Header />
+      <Sidebar />
+      <Students />
     </div>
   );
 }
