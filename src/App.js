@@ -1,8 +1,15 @@
+import React from "react";
+import Header from "./data/components/Header";
+import ClassList from "./data/components/ClassList";
+import Students from "./data/components/Students";
+
 
 function App() {
   return (
     <div>
-      <h1>Student Dashboard</h1>
+      <Header />
+      <ClassList />
+      <Students />
     </div>
   );
 }
