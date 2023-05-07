@@ -1,6 +1,6 @@
 import Header from "./Components/Header";
 import Sidebar from "./Components/Sidebar";
-import Students from "./Components/Students";
+import StudentsList from "./Components/StudentsList";
 import "./Components/Header.css";
 import "./Components/PageStructure.css";
 
@@ -17,7 +17,7 @@ function App() {
           <Sidebar />
         </div>
         <div className="students">
-          <Students />
+          <StudentsList />
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
 
-function Students() {
+function StudentsList() {
   return (
   <p>Students</p>
   );
 }
 
-export default Students;
+export default StudentsList;
