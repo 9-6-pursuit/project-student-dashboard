@@ -49,3 +49,8 @@
   .sidebar-container h2{
     text-align: center;
   }
+
+  .sidebar-container .cohort-list li span:hover {
+    color: #3c7765;
+  }
+  
