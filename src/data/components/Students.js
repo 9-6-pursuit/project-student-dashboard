@@ -9,7 +9,7 @@ function Students({students}) {
   return (
     <>
     <section className="students students-list">
-    <h2>All Students</h2>
+    <h2>All Students (change to cohort when chosen)</h2>
      Total Students: {students.length}
         <div className="container">
             {students.map((student) => {

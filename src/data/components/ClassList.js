@@ -8,26 +8,13 @@ export default function ClassList() {
             <table className="table table-bordered align-middle">
                 <thead className="title">
                     <tr>
-                        <b>Choose a Class by Start Date</b>
+                        <td>Choose a Class by Start Date</td>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <p><u>All Students</u></p>
-                    </tr>
-                    <tr> 
-                        Map through class dates somehow
-                    </tr>
-                    <tr> 
-                        Map through class dates somehow
-                    </tr>
-                    <tr className="align-bottom"> 
-                        Map through class dates somehow
-                    </tr>
-                    <tr className="align-bottom">  
-                        Map through class dates somehow
-                    </tr>
-    
+                    <tr><td><u>All Students</u></td></tr>
+                    <tr><td>Map through class dates somehow</td></tr>
+                    <tr className="align-bottom"><td>Map through class dates somehow</td></tr>
                 </tbody>
             </table>
         </div>

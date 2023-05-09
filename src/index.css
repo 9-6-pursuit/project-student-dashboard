@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgba(0, 60, 255, 0.299);
+    background-color: rgba(210, 215, 233, 0.299);
 }
 
 .student-card {
@@ -20,7 +20,7 @@ body {
 } */
 
 .students {
-    background-color: pink;
+    background-color: rgb(250, 250, 231);
 }
 
 .button:hover {

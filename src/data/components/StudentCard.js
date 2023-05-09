@@ -7,8 +7,6 @@ function StudentCard({student}) {
         setShowMore(!showMore)
     }
 
-    console.log(showMore)
-
 
   return (
     <>
@@ -26,7 +24,7 @@ function StudentCard({student}) {
                     Show More... 
                 </a> */}
 
-                <p> {showMore ? (
+                <div className="p"> {showMore ? (
                     <>
                         
                         <a className="btn ternary card-text show-more-button" role="button" onClick={toggleShowMore}>
@@ -39,7 +37,7 @@ function StudentCard({student}) {
                             Show More...        
                         </button>
                     )}
-                </p>
+                </div>
                 
 
 
