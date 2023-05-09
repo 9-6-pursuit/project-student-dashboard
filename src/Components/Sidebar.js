@@ -4,7 +4,7 @@ function Sidebar({ students, setStudents }) {
   const cohortMap = new Map();
   students.forEach((student) => {
     const code = student.cohort.cohortCode;
-    const name = `${code.charAt(0).toUpperCase()}${code.slice(1)}`.split(/(?=[A-Z])/).join(" ");
+    const name = code.replace(/([a-zA-Z])(\d)/, "$1 $2"); // add space between letters and first digit
     if (cohortMap.has(code)) {
       cohortMap.get(code).students.push(student);
     } else {
@@ -25,7 +25,11 @@ function Sidebar({ students, setStudents }) {
 
   const handleCohortClick = (cohort) => {
     setSelectedCohort(cohort);
-    setStudents(cohort.students);
+    if (cohort.code === "All Students") {
+      setStudents(students);
+    } else {
+      setStudents(cohort.students);
+    }
   };
 
   return (
@@ -47,8 +51,6 @@ function Sidebar({ students, setStudents }) {
 }
 
 export default Sidebar;
-
-
 
 // Use this to show Cohort count
 // <li key={index}>
