@@ -1,14 +1,22 @@
 import React from "react";
 import StudentCard from "./StudentCard.js";
 
-function StudentsList({students}) {
+function StudentsList({ students }) {
+  const title = students[0] ? students[0].cohort.name : "All Students";
+  const count = students.length;
+
   return (
-    <div className="student-card">
-      {students.map((student) => {
-        return (
-        <StudentCard student={student} />
-         )
-      })}
+    <div>
+      <h1>{title}</h1>
+      <p> All Students</p>
+      <p>Number of students: {count}</p>
+      <div className="student-card">
+        {students.map((student) => {
+          return (
+            <StudentCard key={student.id} student={student} />
+          );
+        })}
+      </div>
     </div>
   );
 }
