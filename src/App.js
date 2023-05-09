@@ -21,6 +21,21 @@ function App() {
     return `${seasonMap[season]} ${year}`;
   }
 
+  function isOnTrackToGraduate(student) {
+    if (
+      student.certifications.resume === true &&
+      student.certifications.linkedin === true &&
+      student.certifications.github === true &&
+      student.certifications.mockInterview === true &&
+      student.codewars.lastWeek >= 600
+    )
+      return (
+        <div>
+          <p>On Track to Graduate</p>
+        </div>
+      );
+  }
+  
   return (
     <>
       <Header />
@@ -32,7 +47,7 @@ function App() {
             setSelectedCohort={setSelectedCohort}
           />
         </div>
-        <div className="col-lg-4">
+        <div className="col-md-4">
           <Students
             students={students.filter(
               (student) =>
@@ -42,10 +57,9 @@ function App() {
             selectedCohort={selectedCohort}
             formatCohortCode={formatCohortCode}
             title={
-              selectedCohort
-                ? formatCohortCode(selectedCohort)
-                : "All Students"
+              selectedCohort ? formatCohortCode(selectedCohort) : "All Students"
             }
+            isOnTrackToGraduate={isOnTrackToGraduate}
           />
         </div>
       </div>
