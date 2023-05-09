@@ -11,7 +11,7 @@ export default function StudentCard ({student}){
     }
     return (
         <div className="student-card">
-            <img src={student.profilePhoto}></img>
+            <img src={student.profilePhoto} alt={student.names.surname}></img>
             <div className="student-info-container">
             <h2>{student.names.preferredName} {student.names.surname}</h2>
             {showMore ? (
