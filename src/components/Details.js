@@ -1,15 +1,18 @@
 import React from "react";
 
-function Details() {
+function Details({students}) {
+    // let grades = students.map((student) => {
+    //     student.cohort.scores.assignments
+    // })
   return (
     <>
       <div className="container">
-        <div classname="items">
+        <div>
           <h3>Codewars</h3>
-          <p>Current Total: </p>
-          <p>LastWeek: </p>
-          <p>Goal: </p>
-          <p>Percent of Goal Achieved: </p>
+          <p style={{color: "rgb(91, 148, 111)" }} >Current Total: </p>
+          <p style={{color: "rgb(91, 148, 111)" }}>LastWeek: </p>
+          <p style={{color: "rgb(91, 148, 111)" }}>Goal: </p>
+          <p style={{color: "rgb(91, 148, 111)" }}>Percent of Goal Achieved: </p>
         </div>
         <div className="items">
           <h3>Scores</h3>
