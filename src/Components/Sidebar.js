@@ -11,9 +11,9 @@ function Sidebar({ cohorts, onCohortSelect }) {
       <h2>Choose a Class by Start Date</h2>
       <ul className="cohort-list">
         <li key="All Students">
-          <button onClick={() => handleClick({ code: "All Students", name: "All Students" })}>
+          <span onClick={() => handleClick({ code: "All Students", name: "All Students" })}>
             All Students
-          </button>
+          </span>
         </li>
         {cohorts &&
           cohorts.length > 0 &&
@@ -22,7 +22,7 @@ function Sidebar({ cohorts, onCohortSelect }) {
             .map((cohort) => {
               return (
                 <li key={cohort.code}>
-                  <button onClick={() => handleClick(cohort)}>{cohort.name}</button>
+                  <span onClick={() => handleClick(cohort)}>{cohort.name}</span>
                 </li>
               );
             })}

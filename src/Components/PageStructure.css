@@ -11,11 +11,13 @@
   .bottom-row {
     display: flex;
     flex: 1 1 auto;
+    padding: 10px;
   }
   
   .sidebar {
     flex: 0 0 35%; /* Set the width to 30% */
     /* border: 1px solid blue; */
+    padding-right: 50px;
   }
   
   .students {
