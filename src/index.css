@@ -1,0 +1,21 @@
+
+body {
+    background-color: rgba(0, 60, 255, 0.299);
+}
+
+.student-card {
+    background-color: white;
+    border-color: green;
+    border-style: solid;
+    border-width: 1px;
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 20px;
+    gap: 15px;
+}
+
+.students {
+    background-color: pink;
+}
+

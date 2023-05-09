@@ -1,3 +1,29 @@
+<div class="table-responsive">
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        ...
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        ...
+      </tr>
+      <tr class="align-bottom">
+        ...
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        <td class="align-top">This cell is aligned to the top.</td>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+Take a look at this later:
+
 
 
 export default function ClassList() {
@@ -27,7 +53,21 @@ export default function ClassList() {
                     <tr className="align-bottom">  
                         Map through class dates somehow
                     </tr>
-    
+                    <tr> 
+                        <td>
+                            Map through class dates somehow
+                        </td>
+                        <td>
+                            Map through 
+                        </td>
+                        <td className="align-top">
+                            Map through 
+                        </td>
+                        <td>
+                            Map through 
+                        </td>
+                       
+                    </tr>
                 </tbody>
             </table>
         </div>
