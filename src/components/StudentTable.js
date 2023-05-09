@@ -46,32 +46,33 @@ function CohortList({ students, setSelectedCohort, formatCohortCode }) {
   };
 
   return (
-    <div className="table">
+    <div className="table-responsive">
       <h2 style={{ paddingLeft: "30px" }}>Choose a Class by Start Date</h2>
-      <table>
-        <thead>
-          <tbody>
-            {cohortCodes.map((cohortCode) => {
-              if (cohortCode === "All Students") {
-                return (
-                  <tr key={cohortCode} onClick={() => handleClick(null)}>
-                    <td>
-                      <b>{cohortCode}</b>
-                    </td>
-                  </tr>
-                );
-              } else {
-                return (
-                  <tr key={cohortCode} onClick={() => handleClick(cohortCode)}>
-                    <td>
-                      <b>{formatCohortCode(cohortCode)}</b>
-                    </td>
-                  </tr>
-                );
-              }
-            })}
-          </tbody>
-        </thead>
+      <table className="table">
+        {/* <thead>
+          <tr>Choose a Class by Start Date</tr>
+          </thead> */}
+        <tbody>
+          {cohortCodes.map((cohortCode) => {
+            if (cohortCode === "All Students") {
+              return (
+                <tr key={cohortCode} onClick={() => handleClick(null)}>
+                  <td>
+                    <b>{cohortCode}</b>
+                  </td>
+                </tr>
+              )
+            } else {
+              return (
+                <tr key={cohortCode} onClick={() => handleClick(cohortCode)}>
+                  <td>
+                    <b>{formatCohortCode(cohortCode)}</b>
+                  </td>
+                </tr>
+              );
+            }
+          })}
+        </tbody>
       </table>
     </div>
   );
