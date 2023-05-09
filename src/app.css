@@ -1,0 +1,40 @@
+.Header {
+    background-color: green ;
+    height: 100px;
+}
+
+
+img {
+    max-width: 100%;
+    height: 100px;
+    margin: 2px;
+  }
+
+p {
+    margin: 1px
+}
+
+.cohort{
+    border-bottom: 1px solid green;
+}
+
+.studentBox{
+    border: 1px solid green;
+    margin: 10px;
+}
+.title {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.formBox{
+    padding: 10px;
+    border: 2px solid green;
+    margin: 10px;
+}
+
+.detailBox {
+
+    border: 2px solid green;
+    margin-left: .5px;
+}
