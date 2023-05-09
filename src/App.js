@@ -21,6 +21,7 @@ function App() {
   }
   function resetStudentData() {
     SetStudentData(Students)
+    SetCohortData(Students)
   }
 
   

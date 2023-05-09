@@ -36,7 +36,7 @@ function Student({student}) {
                     <p >{student.names.preferredName} {student.names.middleName.charAt(0)}. {student.names.surname}</p>
                     <p>{student.username}</p>
                     <p>Birthday: {birthdayFormat(student.dob)}</p>
-                    <button className="btn btn-link" href="#" onClick={toggleShowMore}> {showMore ? "Show less..." : "Show more..."}</button>
+                    <button className="btn btn-link" onClick={toggleShowMore}> {showMore ? "Show less..." : "Show more..."}</button>
                 </div>
                 <div className="col-3">
                     <p>{onTrack(student.certifications, student.codewars.current.total)}</p>
