@@ -15,7 +15,15 @@ body {
     gap: 15px;
 }
 
+/* .student-info-container {
+
+} */
+
 .students {
     background-color: pink;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 

@@ -7,10 +7,16 @@ import studentData from "./data/data.json"
 
 function App() {
   return (
-    <div>
+    <div className="container-fluid">
       <Header />
-      <ClassList students={studentData} />
-      <Students students={studentData}/>
+      <div className = "row">
+        <div className="col-4">
+          <ClassList students={studentData} />
+        </div>
+        <div className="col-8">
+          <Students students={studentData}/>
+        </div>
+      </div>
     </div>
   );
 }
