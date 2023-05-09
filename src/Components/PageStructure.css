@@ -15,13 +15,13 @@
   
   .sidebar {
     flex: 0 0 35%; /* Set the width to 30% */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
   
   .students {
-    flex: 0 0 65%; /* Set the width to 70% */
+    flex: 0 0 60%; /* Set the width to 70% */
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 5px 5px 5px 5px 5px;
   }
   
