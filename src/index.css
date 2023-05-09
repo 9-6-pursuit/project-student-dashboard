@@ -1,14 +1,16 @@
 .header {
+  display: flex;
   background-color: rgb(91, 148, 111);
-  text-align: center;
+  justify-content: center;
   color: white;
-  padding: 20px;
   padding: 40px 0px 40px 0px;
 }
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
 }
+
 .green {
   color: rgb(91, 148, 111);
 }
@@ -19,14 +21,16 @@ body {
   align-items: center;
   margin: 10px;
   border: 2px solid rgb(91, 148, 111);
-  padding: 10px;
+  padding-right: 530px;
 }
 
 .card-container img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .card-info {
@@ -34,19 +38,50 @@ body {
   flex-direction: column;
 }
 
-.card-info h3 {
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table {
+  margin: 20px auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgb(91, 148, 111);
+}
+
+@media (max-width: 768px) {
+  .table td,
+  .table th {
+    padding: 4px;
+  }
+
+  .table td:first-child,
+  .table th:first-child {
+    padding-left: 10px;
+  }
+}
+
+ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/* .icon-hover {
+  color: red;
   font-size: 24px;
-}
-
-.card-info p {
-  margin: 5px 0;
-  font-size: 18px;
-}
-
-.card-info span {
-  font-weight: bold;
-  margin-right: 5px;
-}
-
+} */
 
