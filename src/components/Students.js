@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Students({ students }) {
+function Students({ students, title }) {
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <>
-      <h2>All Students</h2>
+      <h2>{title}</h2>
       <p>
         Total Students: <span className="green">{students.length}</span>{" "}
       </p>
-      <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
+      <ul>
         {students.map((student) => {
           const dob = new Date(student.dob);
           const formattedDob = dob.toLocaleString("en-US", {
@@ -33,11 +39,11 @@ function Students({ students }) {
                     </span>{" "}
                     {formattedDob}
                   </p>
-                  <button>
+                  <p onClick={toggleShowMore}>
                     <span style={{ color: "rgb(91, 148, 111)" }}>
-                      Show more...
+                      {showMore ? "Show Less..." : "Show More..."}
                     </span>
-                  </button>
+                  </p>
                 </div>
               </div>
             </li>
