@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Details from "./Details";
 
-function Students({ students, title, isOnTrackToGraduate }) {
+function Students({ students, title }) {
   const [showMore, setShowMore] = useState({});
 
   const toggleShowMore = (studentId) => {
@@ -10,12 +10,6 @@ function Students({ students, title, isOnTrackToGraduate }) {
       [studentId]: !prevShowMoreMap[studentId],
     }));
   };
-
-  // const onTrackStatus = isOnTrackToGraduate(student) ? (
-  //   <div>
-  //     <p>On Track to Graduate</p>
-  //   </div>
-  // ) : null;
 
   return (
     <>
@@ -33,11 +27,6 @@ function Students({ students, title, isOnTrackToGraduate }) {
               year: "numeric",
             });
             const isShowMore = showMore[student.id] || false;
-            // const onTrackStatus = isOnTrackToGraduate(student) ? (
-            //   <div>
-            //     <p>On Track to Graduate</p>
-            //   </div>
-            // ) : null;
 
             return (
               <li key={student.id}>
@@ -65,16 +54,11 @@ function Students({ students, title, isOnTrackToGraduate }) {
                         {isShowMore ? "Show Less..." : "Show More..."}
                       </span>
                     </p>
-                    {isShowMore && <Details />}
-                  </div>
-                  <div className="box">
-                    
-                    <div>
-                      {isOnTrackToGraduate}
-                    </div>
-                    
                   </div>
                 </div>
+                {isShowMore && (
+                  <Details key={student.id} student={student} />
+                )}
               </li>
             );
           })}
