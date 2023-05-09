@@ -37,7 +37,7 @@ function Sidebar({ students, setStudents }) {
           const title = count === 1 ? "student" : "students";
           return (
             <li key={index}>
-              <a href="#" onClick={() => handleCohortClick(cohort)}>{cohort.name}</a> ({count} {title})
+              <a href="#" onClick={() => handleCohortClick(cohort)}>{cohort.name}</a> 
             </li>
           );
         })}
@@ -47,3 +47,10 @@ function Sidebar({ students, setStudents }) {
 }
 
 export default Sidebar;
+
+
+
+// Use this to show Cohort count
+// <li key={index}>
+// <a href="#" onClick={() => handleCohortClick(cohort)}>{cohort.name}</a> ({count} {title})
+// </li>
