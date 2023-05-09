@@ -1,8 +1,13 @@
+import Header from "./components/Header";
+import StudentsList from "./components/StudentsList";
+import data from "./data/data.json"
 
 function App() {
   return (
     <div>
-      <h1>Student Dashboard</h1>
+      <Header />
+      <StudentsList students={data}/>
+      
     </div>
   );
 }
