@@ -9,7 +9,7 @@ function StudentCard({ student }) {
 
   return (
     <div className="student-card-container" style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-      <div className="student-card" style={{ border: "2px solid #3c7765", borderRadius: "5px" }}>
+      <div className="student-card" style={{ border: "2px solid #3c7765", borderRadius: "1px" }}>
         <div className="student-info">
           <div className="profile-image">
             <img src={student.profilePhoto} alt="Profile" />

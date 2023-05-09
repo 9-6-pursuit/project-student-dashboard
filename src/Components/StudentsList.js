@@ -8,7 +8,7 @@ function StudentsList({ students }) {
   return (
     <div>
       <h1>{title}</h1>
-      <h3>Number of students: {count}</h3>
+      <h3>Total Students: <span style={{ color: "#3c7765" }}>{count}</span></h3>
       <div className="student-card">
         {students.map((student) => {
           return (
