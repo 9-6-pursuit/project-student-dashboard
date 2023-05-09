@@ -32,16 +32,32 @@ function Sidebar({ students, setStudents }) {
     }
   };
 
+  const handleSetAllStudents = () => {
+    setStudents(students);
+    setSelectedCohort(cohorts[0]);
+  };
+
   return (
     <div>
       <p>Choose a Class by Start Date</p>
       <ul>
+        <li>
+          <a href="#" onClick={handleSetAllStudents}>
+            All Students
+          </a>
+        </li>
         {cohorts.map((cohort, index) => {
+          if (cohort.code === "All Students") {
+            return null;
+          }
           const count = cohort.students.length;
           const title = count === 1 ? "student" : "students";
           return (
             <li key={index}>
-              <a href="#" onClick={() => handleCohortClick(cohort)}>{cohort.name}</a> 
+              <a href="#" onClick={() => handleCohortClick(cohort)}>
+                {cohort.name}
+              </a>
+              <span style={{ marginLeft: "10px", color: "#3c7765" }}></span>
             </li>
           );
         })}

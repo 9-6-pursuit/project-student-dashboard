@@ -1,14 +1,16 @@
 import React from "react";
 import StudentCard from "./StudentCard.js";
 
+
 function StudentsList({ students }) {
-  const title = students[0] ? students[0].cohort.name : "All Students";
+  const title = students[0] ? students[0].cohort.cohortCode : "All Students";
   const count = students.length;
 
   return (
     <div>
-      <h1>{title}</h1>
-      <h3>Total Students: <span style={{ color: "#3c7765" }}>{count}</span></h3>
+      <h1>All Students</h1>
+      <h3>{title}</h3>
+      <h4>Total Students: <span style={{ color: "#3c7765" }}>{count}</span></h4>
       <div className="student-card">
         {students.map((student) => {
           return (
@@ -21,3 +23,4 @@ function StudentsList({ students }) {
 }
 
 export default StudentsList;
+
