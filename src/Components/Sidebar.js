@@ -25,11 +25,7 @@ function Sidebar({ students, setStudents }) {
 
   const handleCohortClick = (cohort) => {
     setSelectedCohort(cohort);
-    if (cohort.code === "All Students") {
-      setStudents(students);
-    } else {
-      setStudents(cohort.students);
-    }
+    setStudents(cohort.students);
   };
 
   const handleSetAllStudents = () => {
@@ -39,7 +35,7 @@ function Sidebar({ students, setStudents }) {
 
   return (
     <div>
-      <p>Choose a Class by Start Date</p>
+      <h2 className="SidebarTitle">Choose a Class by Start Date</h2>
       <ul>
         <li>
           <a href="#" onClick={handleSetAllStudents}>
@@ -57,7 +53,6 @@ function Sidebar({ students, setStudents }) {
               <a href="#" onClick={() => handleCohortClick(cohort)}>
                 {cohort.name}
               </a>
-              <span style={{ marginLeft: "10px", color: "#3c7765" }}></span>
             </li>
           );
         })}
