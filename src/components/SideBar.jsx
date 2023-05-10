@@ -1,14 +1,17 @@
 
 
-const SideBar = ({ cohort, filterStudentByCohort }) => {
+const SideBar = ({ cohort, filterStudentByCohort, handlePageRefresh }) => {
     return (
         <div>
             <div className="h3 ps-4 my-4 ">Choose a Class by Start Date</div>
-            <div className="h5 pb-2 ps-2 mb-2 border-2 border-bottom border-success pointer-cursor"> All Student</div>
+            <div 
+            className="h5 pb-2 ps-2 mb-2 border-2 border-bottom border-success --pointer-cursor"
+            onClick={handlePageRefresh}
+            > All Student</div>
             {cohort.map((el, index) =>
                 <div
                     key={index}
-                    className="h5 pb-2 ps-2 mb-2 border-2 border-bottom border-success pointer-cursor"
+                    className="h5 pb-2 ps-2 mb-2 border-2 border-bottom border-success --pointer-cursor"
                     onClick={()=>{filterStudentByCohort(el)}}
                 >
                     {el}

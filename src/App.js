@@ -23,17 +23,21 @@ function App() {
     SetDisplayedStudents(filteredList)
   }
 
+  const handlePageRefresh = () => {
+    SetDisplayedStudents(data)
+  }
 
 
   return (
     <div>
-      <Header />
+      <Header handlePageRefresh={handlePageRefresh}/>
       <div className="container">
         <div className="row">
           <div className="col-4">
             <SideBar 
               cohort={getCohortList(data)} 
               filterStudentByCohort={filterStudentByCohort}
+              handlePageRefresh={handlePageRefresh}
             />
           </div>
           <div className="col ms-5">

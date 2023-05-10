@@ -1,4 +1,4 @@
-.pointer-cursor:hover {
+.--pointer-cursor:hover {
     cursor: pointer;
     color: rgb(139, 142, 144);
   }
