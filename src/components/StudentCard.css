@@ -37,6 +37,11 @@
   border: 0;
   text-align: left;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.show-more:hover {
+  color: #03c04a;
 }
 
 .on-track-to-graduate {
