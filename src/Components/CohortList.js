@@ -4,7 +4,7 @@ function CohortList ({cohorts , filterStudentsByCohort}) {
 
   return (
       <div class="cohort-List ">
-        <h3> Choose a class by start date</h3>
+        <h2> Choose a class by start date</h2>
 
 
     <ul  class="cohort-graph">

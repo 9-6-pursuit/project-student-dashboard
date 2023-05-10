@@ -1,4 +1,4 @@
-
+import "./StudentDetail.css"
 function StudentDetail({student}) {
 
   if (student) {
