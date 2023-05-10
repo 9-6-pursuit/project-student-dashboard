@@ -11,16 +11,16 @@ export default function StudentCard ({student}){
     }
     return (
         <div className="student-card">
-            <img src={student.profilePhoto} alt={student.names.surname}></img>
+            <img src={student.profilePhoto} alt="student image"></img>
             <div className="student-info-container">
             <h2>{student.names.preferredName} {student.names.surname}</h2>
             {showMore ? (
                 <div>
-                    <a className="show-more-button" onClick={toggleShowMore}>Show More...</a>
+                    <a href="#" className="show-more-button" onClick={toggleShowMore}>Show More...</a>
                     <StudentDetail student={student}/>
                 </div>
             ) : (
-                <a className="show-more-button" onClick={toggleShowMore}>Show More...</a>
+                <a href="#" className="show-more-button" onClick={toggleShowMore}>Show More...</a>
             )} 
             </div>
         </div>

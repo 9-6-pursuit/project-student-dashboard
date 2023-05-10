@@ -1,5 +1,5 @@
 .student-card {
-    align-items: center;
+    align-items: start;
     display: flex;
     flex-direction: row;
     padding: 20px;
