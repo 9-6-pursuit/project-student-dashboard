@@ -1,0 +1,14 @@
+.students-list {
+  width: 90%;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.students-list h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.students-list p {
+  margin-top: -16px;
+}

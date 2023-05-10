@@ -1,0 +1,59 @@
+.students-card {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 12px;
+    flex-direction: column;
+    position: relative;
+    border-width: thick;
+  }
+  
+  .students-card-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .students-card-list {
+    margin-left: 30px;
+  }
+  
+  .students-card-list, ul, li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
+  .decoration-none {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .profile-image-height {
+    height: 130px;
+  }
+  
+  .show-more {
+    /* width: 37%; */
+    margin-top: px;
+    margin-left: 155px;
+    background-color: white;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    padding-bottom: 10px;
+  }
+  
+  .show-more:hover {
+    color: #2308ed;
+  }
+  
+  .on-track-to-graduate {
+    position: absolute;
+    top: 22%;
+    right: 31px;
+    transform: translateY(-49%);
+  }
+  
+  .students-name {
+    font-size: large;
+    font-weight: 600;
+  }
