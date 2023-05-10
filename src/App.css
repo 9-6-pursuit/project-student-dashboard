@@ -1,0 +1,19 @@
+header {
+    background-color: rgb(83, 145, 111);
+    color: white;
+    height: 3cm;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}

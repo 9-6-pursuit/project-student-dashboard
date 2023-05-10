@@ -1,0 +1,31 @@
+.student {
+    border: 2px solid rgb(83, 145, 111);
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: start;
+}
+
+.student img {
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+a {
+    color: rgb(83, 145, 111);
+}
+
+.student div * {
+    margin: 2px;
+}
+
+.student div a {
+    display: block;
+    margin-top: 20px;
+}
+
+.student div {
+    margin-left: 20px;
+}
