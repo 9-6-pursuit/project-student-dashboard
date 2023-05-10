@@ -1,0 +1,169 @@
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cohort-list-container {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .student-list-container {
+    flex: 2;
+  }
+  
+  .student-basic-info {
+    display: flex;
+  }
+
+  .student-basic-info img {
+    margin-right: 1rem;
+  }
+  
+  .student-item {
+    border: 4px solid #4f9e5e;  /* Adjust color as needed */
+    padding: 1rem;
+    margin-bottom: 0rem; /* Space between student boxes */
+    border-radius: 1px; /* Rounded corners */
+    margin: 2rem;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  .student-basic-info img {
+    margin-right: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(83, 155, 83);
+    color: white;
+    padding: 1rem;
+  }
+
+  .student-item img {
+    width: 100px;  /* adjust as needed */
+    height: 100px;  /* adjust as needed */
+    border-radius: 5px;
+  }
+  
+  .student-text p {
+    margin-bottom: -10px;  /* adjust as needed */
+  }
+  
+  .student-birthday-label {
+    color: green;
+}
+
+.student-text {
+    margin-top: -5px; /* Adjust this value to move the text down */
+}
+
+.student-basic-info button {
+    margin-top: 40px; /* Adjust this value to move the button down */
+    text-decoration: underline;    /* Removes underline */
+    color: green;    /* Text color */
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.student-name {
+    font-weight: bold;
+  }
+
+    
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .one-on-one-notes-container {
+    margin-top: 20px;  /* adjust as needed */
+  }
+
+
+
+.one-on-one-notes {
+  border-top: 2px solid green;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.notes-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: -1px; /* adjust as needed, this is the space between boxes */
+  border: 2px solid black; /* adjust as needed */
+  padding: 10px; /* adjust as needed */
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.add-note-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100px;  /* Set the width as you need */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-item {
+  margin: 5px 0;
+}
+
+.input-field {
+    width: 200px;  /* adjust as needed */
+    height: 15px;  /* adjust as needed */
+    margin: 3px;  /* adds 10px of margin on all sides */
+
+  }
+  
+  .textarea-field {
+    width: 100%;  /* adjust as needed */
+    height: 100px;  /* adjust as needed */
+    margin-top: 10px;  /* adjust as needed */
+  }
+
+  .green-text {
+    color: green;
+  }
+  
+
+  .cohort-list {
+    padding-left: 20px; /* Adjust as needed to push the cohort list to the right */
+  }
+  
+  .cohort-container {
+    border-bottom: 3px solid green; /* Adds a green line after each cohort */
+    margin-bottom: 10px; /* Adds space between cohorts */
+    padding-bottom: 10px; /* Adds space between the cohort and the line */
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  .clickable {
+    cursor: pointer;
+  }
+
+  .margin-top {
+    margin-top: 20px;  /* Adjust this value to your liking */
+  }
+  
