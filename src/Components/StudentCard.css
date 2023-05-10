@@ -38,3 +38,55 @@
     align-items: center;
     gap: 10px;
 }
+
+
+
+
+
+form {
+    background-color: #3c7765;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #333;
+  }
+  
+  form:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 8px #333;
+  }
+  
+  h3 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #fff;
+    color: #3c7765;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3c7765;
+    color: #fff;
+  }
+  
