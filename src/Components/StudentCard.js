@@ -10,7 +10,7 @@ function StudentCard({student}) {
   }
   console.log(student)
     return (
-       
+      
       <div className="students-card">
         
         <img src= {student.profilePhoto} alt={student.names.preferredName}/>
