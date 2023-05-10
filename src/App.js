@@ -10,7 +10,7 @@ import data from "./data/data.json";
 
 function App() {
   const [students, setStudents] = useState(data);
-  const [cohorts, setCohorts] = useState([]);
+  // const [cohorts, setCohorts] = useState([]);
 
   // Create a set of unique cohort codes
   const cohortSet = new Set(data.map(student => student.cohort.cohortCode));
