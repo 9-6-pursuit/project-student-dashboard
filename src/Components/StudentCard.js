@@ -8,6 +8,7 @@ function StudentCard({ student }) {
   };
 
   return (
+
     <div className="student-card-container" style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
       <div className="student-card" style={{ border: "2px solid #3c7765", borderRadius: "1px" }}>
         <div className="student-info">
@@ -15,32 +16,32 @@ function StudentCard({ student }) {
             <img src={student.profilePhoto} alt="Profile" />
           </div>
           <div className="student-details">
-            <h2>
+            <strong>
               {student.names.preferredName} {student.names.surname}
-            </h2>
+            </strong>
             <p> {student.username}</p>
             <p>
-              <strong>Birthdate:</strong> {student.dob}
+            <span style={{ color: "#3c7765" }}>Birthdate:</span> {student.dob}
             </p>
           </div>
         </div>
         {showMore && (
           <div>
-            <p>CodeWars:</p>
+            <strong><p>CodeWars:</p></strong>
             <ul>
               <li>Total: {student.codewars.current.total}</li>
               <li>Last Week: {student.codewars.current.lastWeek}</li>
               <li>Goal Total: {student.codewars.goal.total}</li>
               <li>Goal Last Week: {student.codewars.goal.lastWeek}</li>
             </ul>
-            <p>Certifications:</p>
+            <strong><p>Certifications:</p></strong>
             <ul>
               <li>Resume: {student.certifications.resume ? "Yes" : "No"}</li>
               <li>LinkedIn: {student.certifications.linkedin ? "Yes" : "No"}</li>
               <li>Github: {student.certifications.github ? "Yes" : "No"}</li>
               <li>Mock Interview: {student.certifications.mockInterview ? "Yes" : "No"}</li>
             </ul>
-            <p>Notes:</p>
+            <strong><p>Notes:</p></strong>
             <ul>
               {student.notes.map((note, index) => (
                 <li key={index}>
@@ -49,7 +50,7 @@ function StudentCard({ student }) {
                 </li>
               ))}
             </ul>
-            <p>Cohort:</p>
+            <strong><p>Cohort:</p></strong>
             <ul>
               <li>Cohort Code: {student.cohort.cohortCode}</li>
               <li>Cohort Start Date: {student.cohort.cohortStartDate}</li>
@@ -60,6 +61,7 @@ function StudentCard({ student }) {
                 <li>Assessments: {student.cohort.scores.assessments}</li>
               </ul>
             </ul>
+            <p></p>
             <a onClick={handleClick} style={{ color: "#3c7765" }}>
               Show less...
             </a>
