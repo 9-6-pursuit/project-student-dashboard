@@ -1,0 +1,28 @@
+.student-card {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.student-card > img {
+    margin-right: 30px;
+    
+}
+
+.student-info-container {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.show-more-button {
+    color: blue (30, 90, 164);
+    cursor: pointer;
+
+}
+
+.show-more-button-hover {
+    color: lightblue(150, 150, 227)
+}
