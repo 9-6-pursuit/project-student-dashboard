@@ -1,0 +1,11 @@
+.scoreDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.scoreSection{
+    padding: 30px;
+}
+.green{
+    color: green;
+}
