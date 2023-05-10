@@ -11,7 +11,7 @@ function StudentCard({student}) {
   return (
     <>
         <div className="container card flex-row student-card">
-            <img className="card-img-sm-left example-card-img-responsive" src={student.profilePhoto} alt="student headshot" /> 
+            <img className="card-img-sm-left example-card-img" src={student.profilePhoto} alt="student headshot" /> 
             <div className="card-body student-info-container">
                 <h3 className="card-title h5 h4-sm">{student.names.preferredName} {student.names.middleName.charAt(0)}. {student.names.surname}</h3>
 
