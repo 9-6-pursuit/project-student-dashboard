@@ -1,0 +1,9 @@
+.--pointer-cursor:hover {
+    cursor: pointer;
+    color: rgb(139, 142, 144);
+  }
+
+  .--img {
+    height: 150px;
+    width: 150px;
+  }
