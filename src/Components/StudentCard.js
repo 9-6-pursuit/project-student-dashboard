@@ -99,13 +99,13 @@ function StudentCard({ student }) {
               <button type="submit">Submit</button>
             </form>
             <p></p>
-            <a onClick={handleClick} style={{ color: "#3c7765" }}>
+            <a href="" onClick={handleClick} style={{ color: "#3c7765" }}>
               Show less...
             </a>
           </div>
         )}
         {!showMore && (
-          <a onClick={handleClick} style={{ color: "#3c7765" }}>
+          <a href="" onClick={handleClick} style={{ color: "#3c7765" }}>
             Show more...
           </a>
         )}
