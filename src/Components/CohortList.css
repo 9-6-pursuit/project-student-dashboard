@@ -1,0 +1,22 @@
+
+.cohort-list li{
+    list-style: none;
+}
+
+.cohort-list{
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.cohort-list button{
+    font-weight: bold;
+}
+.cohort-list h4{
+    text-align: center;
+}
+
+.border-color{
+    border-bottom: 2px solid;
+    border-color: green;
+}
+

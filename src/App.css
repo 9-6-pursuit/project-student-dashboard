@@ -1,0 +1,7 @@
+.main-page-content{
+    display: grid;
+    grid-template-columns: 32% 68%;
+    
+}
+
+
