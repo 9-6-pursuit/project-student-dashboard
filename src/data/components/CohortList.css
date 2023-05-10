@@ -1,0 +1,14 @@
+.link{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+}
+.sidebar{
+    border: 10px;
+    
+}
+.cohortList{
+    padding: 30px;
+    padding-top: 30px;
+    cursor: pointer;
+}

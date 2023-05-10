@@ -1,0 +1,25 @@
+.student-card {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+.green-border{
+    border: 3px green solid;
+}
+.scores{
+    display: none;
+}
+/* section{
+    padding: 10px;
+} */
+.student-card-top{
+    padding: 10px;
+}
+.student-pics {
+    max-width: 110px;
+}
+
+.student-info {
+    padding-left: 30px;
+}
