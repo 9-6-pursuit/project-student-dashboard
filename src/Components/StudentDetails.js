@@ -3,7 +3,9 @@ function StudentDetails ({student}) {
         <ul className="student-details">
             <li>Username: {student.username}</li>
             <li>Birthday: {student.dob}</li>
-            <li>{student.codewars.current}</li>
+            <p>Codewars:</p>
+            <li>Current total: {student.codewars.current.total}</li>
+            <li>Last week: {student.codewars.current.lastWeek}</li>
     
         </ul>
     )
