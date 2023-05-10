@@ -1,6 +1,4 @@
 .student-card {
-    /* border: 2px solid #3c7765;
-    border-radius: 5px; */
     padding: 10px;
     flex-direction: column;
     margin-bottom: 10px;
@@ -89,4 +87,4 @@ form {
     background-color: #3c7765;
     color: #fff;
   }
-     
+       
