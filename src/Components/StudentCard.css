@@ -1,0 +1,22 @@
+
+.students-card {
+    background-color:rgb(233, 224, 224);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding:  20 px;
+    border: 2px solid rgb(22, 44, 16) ;
+    /* border: 150px 250px 150px 50px; */
+    
+}
+.students-card  img {
+     margin-right: 40 px;
+}
+
+.show-more-button {
+    color: green;
+    cursor: pointer;
+}
+.show-more-button:hover {
+    color: blue;
+}

@@ -1,0 +1,14 @@
+.cohort-graph{
+    display: grid;
+    text-decoration: underline;
+    height: 1%;
+    list-style-type: none;
+    cursor: pointer;
+}
+/* .cohort-List{
+    text-decoration: underline;
+} */
+
+.cohort-graph :hover{
+    color: blue;
+}
