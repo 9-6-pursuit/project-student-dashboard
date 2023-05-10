@@ -1,0 +1,48 @@
+
+
+/* .students-card{
+    text-align: 10px;
+    padding: 5px;
+    border: 3px solid;
+    border-color: green;
+    justify-content:left;
+    margin-top: 10px;
+
+} */
+
+.profile-info{
+    padding-left: 15px;
+}
+
+
+.students-card{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border: 3px solid ;
+    margin-top: 10px;
+    border-color: green;
+}
+
+.students-card img{
+    margin-right: 30px;
+    align-items: center;
+
+}
+
+
+.top-right{
+    position: absolute;
+    right: 0;
+    color: green;
+}
+
+
+
+.notes{
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 40px;
+    border-top: 1px solid;
+}
