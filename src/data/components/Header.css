@@ -1,0 +1,10 @@
+.page-header{
+    align-items: center;
+    background-color: #479461;
+    color:white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 0 20px 0;
+    
+}

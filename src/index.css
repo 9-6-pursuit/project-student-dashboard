@@ -1,0 +1,19 @@
+
+body {
+    background-color: white;
+}
+
+
+
+/* .student-info-container {
+
+} */
+
+.students {
+    background-color: inherit;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
