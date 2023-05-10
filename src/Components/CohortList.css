@@ -1,14 +1,31 @@
-.cohort-graph{
+/* .cohort-graph{
     display: grid;
     text-decoration: underline;
-    height: 1%;
     list-style-type: none;
     cursor: pointer;
-}
+    background-color: #f2f2f2;
+} */
 /* .cohort-List{
     text-decoration: underline;
 } */
 
 .cohort-graph :hover{
     color: blue;
+}
+
+.cohort-graph {
+    /* border: 1px solid gray; */
+    list-style-type: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+     padding: 0 10px 10px 0;
+    color: black;
+    cursor: pointer;
+}
+
+.dem-cohorts{
+    border-bottom: solid green;
+    padding: 1rem;
+
 }
