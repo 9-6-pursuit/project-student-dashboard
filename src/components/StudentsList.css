@@ -1,0 +1,12 @@
+.students-list {
+  width: 90%;
+}
+
+.students-list h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.students-list p {
+  margin-top: -16px;
+}
