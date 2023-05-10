@@ -1,0 +1,13 @@
+.main-page-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.cohort-list{
+        border-bottom: 1px solid #5b946e;
+        padding: 1rem;   
+}
+
+ul {
+    list-style: none;
+  }
