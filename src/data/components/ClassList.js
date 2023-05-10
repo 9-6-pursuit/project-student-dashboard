@@ -14,14 +14,7 @@
 })
  } */}
 
-<ul>
-    <li>Number of cohorts: {cohorts.length}</li>
-    {cohorts.map((cohort)=> {
-        return (
-            <li key={cohort}>{cohort}</li>
-        )
-    })}
-</ul>
+
 
     <div className="container">      
         <table className="table table-hover">
@@ -35,12 +28,12 @@
 
             <tbody>
                 <tr>
-                  <td>All Students</td>
+                  <td className="table border-bottom border-success border-2" onClick= { () => {filterStudentsByCohort()}}>All Students</td>
                 </tr>
 
                 {cohorts.map((cohort)=>{
                     return (
-                        <tr className="table" key={cohort}><td>{cohort}</td></tr>
+                        <tr className="table border-bottom border-success border-2" key={cohort} onClick={ ()=> {filterStudentsByCohort(cohort)}}><td>  {cohort.substring(0, cohort.length - 4) + " " + cohort.substring(cohort.length - 4, cohort.length)}</td></tr>
                     )})} 
 
             </tbody>
@@ -56,9 +49,9 @@ export default ClassList
 /* Code I didn't use:
 
 
-        <div className="table table-responsive table-striped table-bordered table-hover">
+        <div className="table table-responsive table-striped table-bordered table-hover border-bottom border border-success border-2">
         
-            <table className="table table-bordered align-middle">
+            <table className="table table-bordered align-middle border-bottom border border-success border-2">
                 <thead className="title">
                     <tr>
                         <td>Choose a Class by Start Date</td>

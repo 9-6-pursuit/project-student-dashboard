@@ -1,0 +1,25 @@
+
+img {
+    width: 140px;
+    height: 140px
+}
+
+.greenSpan {
+    color: green
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.student-card {
+    background-color: white;
+    border-color: green;
+    border-style: solid;
+    border-width: 1px;
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 20px;
+    gap: 15px;
+}

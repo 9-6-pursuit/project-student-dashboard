@@ -45,11 +45,14 @@ function App() {
 */
 
   const filterStudentsByCohort = (cohortCode) => {
-    let filteredList = studentData.filter(student => {
-      return student.cohort.cohortCode === cohortCode
-    })
-    setDisplayTheseStudents(filteredList); 
-    return filteredList();
+    if (!cohortCode) {
+      setDisplayTheseStudents(studentData); 
+    } else {
+      let filteredList = studentData.filter(student => {
+        return student.cohort.cohortCode === cohortCode
+      })
+      setDisplayTheseStudents(filteredList); 
+    }
   }
 
 

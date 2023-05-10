@@ -1,0 +1,547 @@
+[
+    {
+      "id": "D8-hEWB",
+      "names": {
+        "preferredName": "Israel",
+        "middleName": "Benjamin",
+        "surname": "Rodriguez"
+      },
+      "username": "israel.rodriguez@pursuit.org",
+      "dob": "2/3/1979",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=38&maximum_age=48",
+      "codewars": {
+        "current": { "total": 1804, "lastWeek": 144 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [
+        {
+          "commenter": "Alan R.",
+          "comment": "Israel is a pleasure to work with!"
+        }
+      ],
+      "cohort": {
+        "cohortCode": "Winter2025",
+        "cohortStartDate": "12/1/25",
+        "scores": { "assignments": 0.71, "projects": 0.7, "assessments": 0.66 }
+      }
+    },
+    {
+      "id": "9-FFhs1",
+      "names": {
+        "preferredName": "Phil",
+        "middleName": "Julian",
+        "surname": "Heller"
+      },
+      "username": "phil.heller@pursuit.org",
+      "dob": "1/4/1988",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=29&maximum_age=39",
+      "codewars": {
+        "current": { "total": 1384, "lastWeek": 129 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Winter2026",
+        "cohortStartDate": "12/1/26",
+        "scores": { "assignments": 0.62, "projects": 0.75, "assessments": 0.74 }
+      }
+    },
+    {
+      "id": "NQHXKgE",
+      "names": {
+        "preferredName": "Gina",
+        "middleName": "London",
+        "surname": "Hammes"
+      },
+      "username": "gina.hammes@pursuit.org",
+      "dob": "3/12/1982",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=female&minimum_age=35&maximum_age=45",
+      "codewars": {
+        "current": { "total": 1754, "lastWeek": 148 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Summer2026",
+        "cohortStartDate": "6/1/26",
+        "scores": { "assignments": 0.67, "projects": 0.67, "assessments": 0.77 }
+      }
+    },
+    {
+      "id": "SxcMhc-",
+      "names": {
+        "preferredName": "Owen",
+        "middleName": "Charles",
+        "surname": "Reynolds"
+      },
+      "username": "owen.reynolds@pursuit.org",
+      "dob": "6/8/1990",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=27&maximum_age=37",
+      "codewars": {
+        "current": { "total": 1207, "lastWeek": 134 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Summer2025",
+        "cohortStartDate": "6/1/25",
+        "scores": { "assignments": 0.78, "projects": 0.74, "assessments": 0.73 }
+      }
+    },
+    {
+      "id": "M2xL4sI",
+      "names": {
+        "preferredName": "Everett",
+        "middleName": "Sonny",
+        "surname": "Metz"
+      },
+      "username": "everett.metz@pursuit.org",
+      "dob": "5/6/1994",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=23&maximum_age=33",
+      "codewars": {
+        "current": { "total": 320, "lastWeek": 226 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Spring2025",
+        "cohortStartDate": "3/1/25",
+        "scores": { "assignments": 0.73, "projects": 0.64, "assessments": 0.72 }
+      }
+    },
+    {
+      "id": "ObI_Lrl",
+      "names": {
+        "preferredName": "Edwin",
+        "middleName": "Isaac",
+        "surname": "Kilback"
+      },
+      "username": "edwin.kilback@pursuit.org",
+      "dob": "4/5/1993",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=24&maximum_age=34",
+      "codewars": {
+        "current": { "total": 169, "lastWeek": 77 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Fall2025",
+        "cohortStartDate": "9/1/25",
+        "scores": { "assignments": 0.75, "projects": 0.77, "assessments": 0.78 }
+      }
+    },
+    {
+      "id": "2Nxf4T1",
+      "names": {
+        "preferredName": "Ramona",
+        "middleName": "Lyric",
+        "surname": "Kling"
+      },
+      "username": "ramona.kling@pursuit.org",
+      "dob": "5/2/1983",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=female&minimum_age=34&maximum_age=44",
+      "codewars": {
+        "current": { "total": 1838, "lastWeek": 27 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Winter2026",
+        "cohortStartDate": "12/1/26",
+        "scores": { "assignments": 0.72, "projects": 0.64, "assessments": 0.76 }
+      }
+    },
+    {
+      "id": "fFUqth5",
+      "names": {
+        "preferredName": "Nellie",
+        "middleName": "Hope",
+        "surname": "Thompson"
+      },
+      "username": "nellie.thompson@pursuit.org",
+      "dob": "1/5/1989",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=female&minimum_age=28&maximum_age=38",
+      "codewars": {
+        "current": { "total": 1401, "lastWeek": 61 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Summer2026",
+        "cohortStartDate": "6/1/26",
+        "scores": { "assignments": 0.65, "projects": 0.67, "assessments": 0.64 }
+      }
+    },
+    {
+      "id": "rXJV_My",
+      "names": {
+        "preferredName": "Jody",
+        "middleName": "Harrison",
+        "surname": "Legros"
+      },
+      "username": "jody.legros@pursuit.org",
+      "dob": "2/11/1984",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=33&maximum_age=43",
+      "codewars": {
+        "current": { "total": 191, "lastWeek": 3 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Summer2026",
+        "cohortStartDate": "6/1/26",
+        "scores": { "assignments": 0.68, "projects": 0.79, "assessments": 0.65 }
+      }
+    },
+    {
+      "id": "m5cebUs",
+      "names": {
+        "preferredName": "Latoya",
+        "middleName": "Juliet",
+        "surname": "Kuhn"
+      },
+      "username": "latoya.kuhn@pursuit.org",
+      "dob": "6/10/1995",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=female&minimum_age=22&maximum_age=32",
+      "codewars": {
+        "current": { "total": 1216, "lastWeek": 71 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Spring2026",
+        "cohortStartDate": "3/1/26",
+        "scores": { "assignments": 0.73, "projects": 0.76, "assessments": 0.76 }
+      }
+    },
+    {
+      "id": "G7N8q1h",
+      "names": {
+        "preferredName": "Vincent",
+        "middleName": "Levi",
+        "surname": "Considine"
+      },
+      "username": "vincent.considine@pursuit.org",
+      "dob": "6/1/1998",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=19&maximum_age=29",
+      "codewars": {
+        "current": { "total": 1041, "lastWeek": 205 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Spring2026",
+        "cohortStartDate": "3/1/26",
+        "scores": { "assignments": 0.8, "projects": 0.72, "assessments": 0.78 }
+      }
+    },
+    {
+      "id": "gxWrAvK",
+      "names": {
+        "preferredName": "Ricky",
+        "middleName": "Ander",
+        "surname": "McLaughlin"
+      },
+      "username": "ricky.mclaughlin@pursuit.org",
+      "dob": "5/1/1983",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=34&maximum_age=44",
+      "codewars": {
+        "current": { "total": 1335, "lastWeek": 67 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Fall2026",
+        "cohortStartDate": "9/1/26",
+        "scores": { "assignments": 0.71, "projects": 0.6, "assessments": 0.69 }
+      }
+    },
+    {
+      "id": "2f7TXng",
+      "names": {
+        "preferredName": "Kristopher",
+        "middleName": "Sebastian",
+        "surname": "Daugherty"
+      },
+      "username": "kristopher.daugherty@pursuit.org",
+      "dob": "3/5/1996",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=21&maximum_age=31",
+      "codewars": {
+        "current": { "total": 480, "lastWeek": 224 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Summer2026",
+        "cohortStartDate": "6/1/26",
+        "scores": { "assignments": 0.71, "projects": 0.68, "assessments": 0.73 }
+      }
+    },
+    {
+      "id": "SBSXjrq",
+      "names": {
+        "preferredName": "Terrance",
+        "middleName": "Zyair",
+        "surname": "Collins"
+      },
+      "username": "terrance.collins@pursuit.org",
+      "dob": "4/1/1998",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=19&maximum_age=29",
+      "codewars": {
+        "current": { "total": 477, "lastWeek": 189 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Winter2025",
+        "cohortStartDate": "12/1/25",
+        "scores": { "assignments": 0.74, "projects": 0.67, "assessments": 0.68 }
+      }
+    },
+    {
+      "id": "GISQShk",
+      "names": {
+        "preferredName": "Robin",
+        "middleName": "Grace",
+        "surname": "Bogisich"
+      },
+      "username": "robin.bogisich@pursuit.org",
+      "dob": "5/9/1982",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=female&minimum_age=35&maximum_age=45",
+      "codewars": {
+        "current": { "total": 1989, "lastWeek": 188 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Summer2026",
+        "cohortStartDate": "6/1/26",
+        "scores": { "assignments": 0.62, "projects": 0.61, "assessments": 0.68 }
+      }
+    },
+    {
+      "id": "aFvcqpK",
+      "names": {
+        "preferredName": "Barbara",
+        "middleName": "Taylen",
+        "surname": "Heathcote"
+      },
+      "username": "barbara.heathcote@pursuit.org",
+      "dob": "7/9/1988",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=female&minimum_age=29&maximum_age=39",
+      "codewars": {
+        "current": { "total": 1777, "lastWeek": 103 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Spring2025",
+        "cohortStartDate": "3/1/25",
+        "scores": { "assignments": 0.78, "projects": 0.68, "assessments": 0.73 }
+      }
+    },
+    {
+      "id": "uPhXXGz",
+      "names": {
+        "preferredName": "Marjorie",
+        "middleName": "Coraline",
+        "surname": "Frami"
+      },
+      "username": "marjorie.frami@pursuit.org",
+      "dob": "4/8/1990",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=female&minimum_age=27&maximum_age=37",
+      "codewars": {
+        "current": { "total": 1176, "lastWeek": 246 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Spring2026",
+        "cohortStartDate": "3/1/26",
+        "scores": { "assignments": 0.61, "projects": 0.63, "assessments": 0.7 }
+      }
+    },
+    {
+      "id": "99DuUz0",
+      "names": {
+        "preferredName": "Sammy",
+        "middleName": "Maverick",
+        "surname": "Kozey"
+      },
+      "username": "sammy.kozey@pursuit.org",
+      "dob": "1/4/1987",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=30&maximum_age=40",
+      "codewars": {
+        "current": { "total": 533, "lastWeek": 185 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Winter2026",
+        "cohortStartDate": "12/1/26",
+        "scores": { "assignments": 0.68, "projects": 0.64, "assessments": 0.61 }
+      }
+    },
+    {
+      "id": "tWZAfte",
+      "names": {
+        "preferredName": "Troy",
+        "middleName": "Ander",
+        "surname": "Ferry"
+      },
+      "username": "troy.ferry@pursuit.org",
+      "dob": "7/3/1996",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=21&maximum_age=31",
+      "codewars": {
+        "current": { "total": 1398, "lastWeek": 37 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Summer2025",
+        "cohortStartDate": "6/1/25",
+        "scores": { "assignments": 0.63, "projects": 0.72, "assessments": 0.72 }
+      }
+    },
+    {
+      "id": "mV_V9Tg",
+      "names": {
+        "preferredName": "Trevor",
+        "middleName": "Jaxtyn",
+        "surname": "Tillman"
+      },
+      "username": "trevor.tillman@pursuit.org",
+      "dob": "7/10/1983",
+      "profilePhoto": "https://xsgames.co/randomusers/avatar.php?g=male&minimum_age=34&maximum_age=44",
+      "codewars": {
+        "current": { "total": 578, "lastWeek": 128 },
+        "goal": { "total": 850, "lastWeek": 75 }
+      },
+      "certifications": {
+        "resume": false,
+        "linkedin": false,
+        "github": false,
+        "mockInterview": false
+      },
+      "notes": [],
+      "cohort": {
+        "cohortCode": "Spring2026",
+        "cohortStartDate": "3/1/26",
+        "scores": { "assignments": 0.61, "projects": 0.67, "assessments": 0.63 }
+      }
+    }
+]

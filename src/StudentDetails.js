@@ -1,13 +1,31 @@
-
+import "./StudentDetails.css"
 
 function StudentDetails({student}) {
 
-    console.log("student.codewars.current.total:", student.codewars.current.total)
     
-    let percentOfGoal = (student.codewars.goal.total/student.codewars.current.total)*100
+    let percentOfGoal = (student.codewars.goal.total/student.codewars.current.total)*100;
+    let percentOfAssignments = (student.cohort.scores.assignments)*100;
+    percentOfAssignments = percentOfAssignments+"%"
+    let percentOfProjects = (student.cohort.scores.projects)*100;
+    percentOfProjects = percentOfProjects+"%"
+    let percentOfAssessments = (student.cohort.scores.assessments)*100;
+    percentOfAssessments = percentOfAssessments+"%"
+    let resumeCheck = (student.certifications.resume)
 
+  
+    console.log(percentOfAssignments)
+    console.log(student.certifications.github)
 
+  // function resumeCheck(){
+  //   return (student.certifications.resume === true ? 'Done' : 'X')
+  // }
 
+  // function resumeCheck2(){
+  //   if (student.certifications.resume === true) {
+  //     return "✓";
+  //   } else return "x"
+  // }
+  
   return (
     <>
 
@@ -15,58 +33,58 @@ function StudentDetails({student}) {
 
 <div className="container">   
   <div className="row header-row">
-    <div className="col">
+    <div className="col bold">
         Codewars
     </div>
-    <div className="col">
+    <div className="col bold">
         Scores
     </div>
-    <div className="col">
+    <div className="col bold">
         Certifications
     </div>
   </div>
   <div className="row">
     <div className="col">
-        <p>Current Total: {student.codewars.current.total}</p>
+        <p><span className="greenSpan">Current Total: </span>{student.codewars.current.total}</p>
     </div>
     <div className="col">
-        Assignments:  ___ %
+    <span className="greenSpan">Assignments:</span> {percentOfAssignments}
     </div>
     <div className="col">
-        Resume:  
-    </div>
-  </div>
-  <div className="row">
-    <div className="col">
-      Last Week: {student.codewars.current.lastWeek}
-    </div>
-    <div className="col">
-        Two of three columns
-    </div>
-    <div className="col">
-        Three of three columns
+    <span className="greenSpan">Resume: </span> {resumeCheck}
     </div>
   </div>
   <div className="row">
     <div className="col">
-      Goal: {student.codewars.goal.total}
+      <span className="greenSpan">Last Week:</span> {student.codewars.current.lastWeek}
     </div>
     <div className="col">
-        Two of three columns
+      <span className="greenSpan">Projects:</span> {percentOfProjects}
     </div>
     <div className="col">
-        Three of three columns
+      <span className="greenSpan">LinkedIn: </span>
     </div>
   </div>
   <div className="row">
     <div className="col">
-      Percent of Goal Achieved: {percentOfGoal.toFixed(0)}
+      <span className="greenSpan">Goal: </span>{student.codewars.goal.total}
     </div>
     <div className="col">
-        Two of three columns
+      <span className="greenSpan">Assessments:</span> {percentOfAssessments}
     </div>
     <div className="col">
-        Three of three columns
+      <span className="greenSpan">Mock Interview: </span> 
+    </div>
+  </div>
+  <div className="row">
+    <div className="col">
+      <span className="greenSpan">Percent of Goal Achieved: </span>{percentOfGoal.toFixed(0)}%
+    </div>
+    <div className="col">
+
+    </div>
+    <div className="col">
+        <span className="greenSpan">GitHub: </span>{student.certifications.github ? "done" : "X"}
     </div>
   </div>
 </div>
