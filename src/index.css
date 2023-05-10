@@ -1,0 +1,97 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: #5b946e;
+}
+
+.main-header {
+    background-color: #5b946e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 25px 0;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.cohorts h3 {
+    font-size: 1.4em;
+    margin-left: 40px;
+}
+
+.cohort {
+    border-bottom: 2px solid #5b946e;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 15px;
+    padding: 8px 8px 5px 5px;
+}
+
+.cohort:hover {
+    background-color: gainsboro;
+}
+
+.students-list {
+    margin-left: 60px;
+}
+
+.student-card {
+    border: 2px solid #5b946e;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 20px 20px 0;
+    padding: 20px;
+}
+
+img {
+    border-radius: 5px;
+    margin-right: 30px;
+    height: 120px;
+    width: 120px;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info-element {
+    margin: 5px 0 5px 0;
+    padding-bottom: 5px;
+}
+
+.show-detail {
+    cursor: pointer;
+    color: blue;
+}
+
+.show-detail:hover {
+    color: blueviolet;
+}
+
+.student-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.individual-detail {
+    margin-right: 60px;
+    text-align: left;
+}
+
+#info {
+    width: 75%;
+}
+
+#track {
+    width: 25%;
+    text-align: right;
+}
