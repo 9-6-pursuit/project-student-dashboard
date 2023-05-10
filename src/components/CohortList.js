@@ -2,8 +2,8 @@ import "./CohortList.css"
 export default function CohortList ({filterStudentsByCohort, cohorts}){
     return (
         <ul className="cohort-list">
-        <div>This is the cohort list.</div>
-        <li>Number of cohorts: {cohorts.length}</li>
+        <div>Choose a Class by Start Date.</div>
+        <li>All Students</li>
         {cohorts.map((cohort) => {
             return (
                 <li 

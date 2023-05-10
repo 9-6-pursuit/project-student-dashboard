@@ -35,6 +35,7 @@ function App() {
       <Header />
       <section className="main-page-content" >
         <CohortList 
+          className="cohort"
           filterStudentsByCohort={filterStudentsByCohort} 
           cohorts={getCohorts(data)}  
         />

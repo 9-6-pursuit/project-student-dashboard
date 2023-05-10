@@ -3,6 +3,18 @@
     
 }
 
+.cohort-list div {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
 .list {
+    border-bottom: 2px solid green;
     cursor: pointer;
+    margin: 25px;
+    margin-right: 80px;
+    font-weight: bold;
+
 }
