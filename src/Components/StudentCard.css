@@ -20,3 +20,8 @@
 .show-more-button:hover {
     color: blue;
 }
+img{
+    width: 150px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
