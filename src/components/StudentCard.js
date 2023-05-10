@@ -27,7 +27,10 @@ function StudentCard({studentsData}) {
     <div className="students-card primary-border-color">
 
       <div className="students-card-row">
-        <img className="profile-image-height" src={studentsData.profilePhoto} />
+        <img className="profile-image-height" 
+            src={studentsData.profilePhoto} 
+            alt={`${studentsData.names.preferredName} ${middleInitial} ${studentsData.names.surname}`} 
+        />
         <ul className="students-card-list">
           <li className="students-name cabin-fonts">
             {studentsData.names.preferredName} {middleInitial} {studentsData.names.surname}
