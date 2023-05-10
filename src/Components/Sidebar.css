@@ -1,0 +1,55 @@
+.SidebarTitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sidebar {
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .SidebarTitle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  
+   .cohort-list li {
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 2px solid #3c7765;
+    padding: 0.5rem 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+     color: black;
+  }
+  
+
+  .SidebarList li {
+    color: black;
+  }
+
+  .sidebar-container .cohort-list li span {
+    cursor: pointer;
+    color: black;
+    text-decoration: blink;
+  }
+  
+
+  .sidebar-container h2{
+    text-align: center;
+  }
+
+  .sidebar-container .cohort-list li span:hover {
+    color: #3c7765;
+  }

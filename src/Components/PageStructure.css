@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: visible;
+}
+
+.student-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header-row {
+  flex: 0 0 auto;
+}
+
+.bottom-row {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 10px;
+}
+
+.sidebar {
+  flex: 0 0 35%; /* Set the width to 30% */
+  /* border: 1px solid blue; */
+  padding-right: 50px;
+}
+
+.students {
+  flex: 0 0 60%; /* Set the width to 70% */
+  flex-direction: column;
+  /* border: 1px solid red; */
+  padding: 5px 5px 5px 5px 5px;
+}
