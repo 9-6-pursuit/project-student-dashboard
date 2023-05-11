@@ -4,28 +4,18 @@ import { useState } from "react";
 
 const StudentCard = ({ student }) => {
     const [show, setShow] = useState(false)
-    const [input, setInput] = useState("")
-    const [inputList, setInputList] = useState([])
+    const [comment, setComment] = useState(student.notes)
+    
 
     const toggleShow = () => {
         setShow(!show)
     }
 
-    const handleInput = (e) => {
-        // console.log(e.target.value);
-        let name = `${e.target.value}, says " "`
-        setInput(name)
-    }
-
-    const inputListArray = () => {
-        setInputList((prevInputList) => {
-            return [...prevInputList, input]
-        })
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        inputListArray()
+    function newComment(event) {
+        event.preventDefault()
+        setComment([...comment, {commenter: event.target.name.value, comment: event.target.comment.value}])
+        event.target.name.value =""
+        event.target.comment.value =""
     }
 
     let month = { "1": "Jan", "2": "Feb", "3": "Mar", "4": "Apr",
@@ -50,7 +40,7 @@ const StudentCard = ({ student }) => {
                             <div>                       
                                 <p className="text-success" role="button" onClick={toggleShow}><u>Show Less...</u></p>
                                 <ShowCard student={student} />
-                                <Notes handleInput={handleInput} handleSubmit={handleSubmit} inputList={inputList}/>
+                                <Notes  newComment={newComment} comment={comment}/>
                             </div>
                              : <p className="text-success" role="button" onClick={toggleShow}><u>Show More...</u></p> }
                              
