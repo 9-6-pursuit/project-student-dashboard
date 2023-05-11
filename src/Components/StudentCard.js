@@ -48,12 +48,15 @@ export default function StudentCard({student}){
                     <div>{student.username}</div>
                     <div><span className="text-success">Birthday:</span> {newMonth} {fixedDate[1]}, {fixedDate[2]}</div>
                     <br></br>
-                    <button onClick={handleClick} className="btn text-success btn-link ">{show}</button>
+                    <button onClick={handleClick} className="btn text-success btn-link ">{show}</button>   
+                </div>
+                <div className="row pl-5 pt-3">
                     <section className="student-info">
-                        {showBoolean &&(
-                        <StudentDetail student={student}/>
-                        )}
-                    </section>    
+                            {showBoolean &&(
+                            <StudentDetail student={student}/>
+                            )}
+                        </section> 
+
                 </div>
                 
                 <section className="notes">
