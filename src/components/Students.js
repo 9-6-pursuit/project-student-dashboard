@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Details from "./Details";
 
-function Students({ students, title }) {
+function Students({ students, title, isOnTrackToGraduate }) {
   const [showMore, setShowMore] = useState({});
 
   const toggleShowMore = (studentId) => {
@@ -36,9 +36,11 @@ function Students({ students, title }) {
                     alt={student.names.preferredName}
                   />
                   <div className="card-body">
+                    {/* {isOnTrackToGraduate(student)} */}
                     <h3 className="card-title">
                       {student.names.preferredName} {student.names.surname}
                     </h3>
+                    {/* {isOnTrackToGraduate(student)} */}
                     <p className="card-text">{student.username}</p>
                     <p className="card-text">
                       <span style={{ color: "rgb(91, 148, 111)" }}>
@@ -46,6 +48,7 @@ function Students({ students, title }) {
                       </span>{" "}
                       {formattedDob}
                     </p>
+                    {/* {isOnTrackToGraduate(student)} */}
                     <p
                       className="card-text"
                       onClick={() => toggleShowMore(student.id)}
@@ -54,15 +57,15 @@ function Students({ students, title }) {
                         {isShowMore ? "Show Less..." : "Show More..."}
                       </span>
                     </p>
+                    {/* {isOnTrackToGraduate(student)} */}
                   </div>
                 </div>
-                {isShowMore && (
-                  <Details key={student.id} student={student} />
-                )}
+                {isShowMore && <Details key={student.id} student={student} />}
               </li>
             );
           })}
         </ul>
+        {/* <div>{isOnTrackToGraduate}</div> */}
       </div>
     </>
   );
