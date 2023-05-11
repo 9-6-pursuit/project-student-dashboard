@@ -95,3 +95,20 @@ img {
     width: 25%;
     text-align: right;
 }
+
+form {
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    width: 99%;
+}
+
+.form-element {
+    margin-bottom: 7px;
+}
+
+label {
+    margin-right: 10px;
+}
