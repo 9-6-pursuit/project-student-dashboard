@@ -121,3 +121,15 @@ button {
 button:hover {
     background-color: #36c062;
 }
+
+.green {
+    color: #36c062;
+}
+
+.yellow {
+    color: orange;
+}
+
+.red {
+    color: red;
+}

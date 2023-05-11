@@ -3,6 +3,13 @@ import { useState } from "react";
 function StudentDetail({ student, notes, handleAddNote }) {
 
   let goalPercentage = Math.floor(student.codewars.current.total / student.codewars.goal.total * 100);
+  let cls = "green";
+  if (goalPercentage >= 50 && goalPercentage < 100) {
+    cls = "yellow"
+  }
+  else if (goalPercentage < 50) {
+    cls = "red";
+  }
 
   const getSign = isTrue => isTrue ? "✅" : "❌";
 
@@ -16,7 +23,7 @@ function StudentDetail({ student, notes, handleAddNote }) {
         <p><span>Current Total:</span> {student.codewars.current.total}</p>
         <p><span>Last Week:</span> {student.codewars.current.lastWeek}</p>
         <p><span>Goal:</span> {student.codewars.goal.total}</p>
-        <p><span>Percent of Goal Achieved:</span> {goalPercentage}%</p>
+        <p><span>Percent of Goal Achieved:</span> <strong className={cls}>{goalPercentage}%</strong></p>
       </div>
       <div className="individual-detail scores">
         <h4>Scores</h4>
