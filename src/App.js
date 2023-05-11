@@ -5,7 +5,7 @@ import Students from "./components/Students";
 import CohortList from "./components/StudentTable";
 
 function App() {
-  const [students, setStudents] = useState(data);
+  const [students] = useState(data);
   console.log(data);
   const [selectedCohort, setSelectedCohort] = useState(null);
 
