@@ -1,24 +1,12 @@
 import { useState } from "react";
 
-function StudentDetail({ student }) {
-  const [notes, setNotes] = useState([...student.notes]);
+function StudentDetail({ student, notes, handleAddNote }) {
 
   let goalPercentage = Math.floor(student.codewars.current.total / student.codewars.goal.total * 100);
 
   const getSign = isTrue => isTrue ? "✅" : "❌";
 
   let id = 100;
-
-  const handleAddNote = (event) => {
-    event.preventDefault();
-
-    let name = document.getElementById("commenter").value;
-    let comment = document.getElementById("comment").value;
-    document.getElementById("note-form").reset();
-
-    setNotes([...notes, {"commenter" : name, "comment" : comment}]);
-    // console.log(name, comment)
-  }
 
   return (
     <>

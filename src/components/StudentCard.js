@@ -3,9 +3,20 @@ import StudentDetail from "./StudentDetail";
 
 function StudentCard({ student }) {
   const [showDetail, setShowDetail] = useState(false);
+  const [notes, setNotes] = useState([...student.notes]);
 
   const toggleShowDetail = () => {
     setShowDetail(!showDetail);
+  }
+
+  const handleAddNote = (event) => {
+    event.preventDefault();
+
+    let name = document.getElementById("commenter").value;
+    let comment = document.getElementById("comment").value;
+    document.getElementById("note-form").reset();
+
+    setNotes([...notes, {"commenter" : name, "comment" : comment}]);
   }
 
   let graduation = "";
@@ -34,7 +45,11 @@ function StudentCard({ student }) {
         </div>
       </div>
       {showDetail ? 
-        <StudentDetail student={student} /> : <></>}
+        <StudentDetail
+          student={student}
+          notes={notes}
+          handleAddNote={handleAddNote}
+        /> : <></>}
     </div>
   );
 }
