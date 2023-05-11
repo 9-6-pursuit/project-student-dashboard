@@ -76,7 +76,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  gap: 80px;
+  gap: 90px;
 }
 
 .items {
