@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function StudentDetail({ student, notes, handleAddNote }) {
 
   let goalPercentage = Math.floor(student.codewars.current.total / student.codewars.goal.total * 100);
