@@ -23,7 +23,6 @@ body {
   border: 2px solid rgb(91, 148, 111);
   padding-right: 400px;
 }
-
 .card-container img {
   width: 100px;
   height: 100px;
@@ -88,6 +87,10 @@ ul {
   color: rgb(91, 148, 111);
 }
 
-.box{
+.box {
   background-color: yellow;
+}
+
+.custom {
+margin-left: 250px;
 }
