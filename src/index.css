@@ -36,21 +36,7 @@ text-align: right;
     padding: 10px;
     background-color: #f2f2f2;
     border: 1px solid #ddd;
-    border-radius: 4px;
-  }
 
-/* .dropdown-student-info li ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    z-index: 1;
-  } */
 
   .dropdown-student-info li:hover ul {
     display: block;
