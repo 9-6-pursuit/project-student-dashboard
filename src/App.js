@@ -47,7 +47,7 @@ function App() {
             setSelectedCohort={setSelectedCohort}
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 custom">
           <Students
             students={students.filter(
               (student) =>
