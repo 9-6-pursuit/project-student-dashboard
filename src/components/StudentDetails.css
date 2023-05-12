@@ -1,0 +1,32 @@
+.detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.detail-codewars{
+    grid-template-columns: 30px;
+}
+
+.detail-scores {
+    grid-template-rows: 30px;
+
+
+}
+
+.detail-cert{
+    grid-template-rows: 30px;
+
+}
+
+span {
+    color: green;
+}
+
+.checkmark {
+    color: green;
+}
+
+.x {
+    color: red;
+}
