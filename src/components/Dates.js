@@ -8,7 +8,7 @@ function Dates(props) {
 	cohorts.sort(
 		(a, b) =>
 			parseInt(a.slice(a.length - 4, a.length)) -
-			parseInt(b.slice(a.length - 4, a.length))
+			parseInt(b.slice(b.length - 4, b.length))
 	);
 
 	function changeFilter(filter) {
@@ -19,7 +19,7 @@ function Dates(props) {
 		<div className="dates">
 			<h2>Choose a Class by Start Date</h2>
 			<ul>
-				<li>
+				<li className="dateLi">
 					<button
 						onClick={() => {
 							changeFilter("All Students");
@@ -29,7 +29,7 @@ function Dates(props) {
 				</li>
 				{cohorts.map((element) => {
 					return (
-						<li key={element}>
+						<li className="dateLi" key={element}>
 							<button
 								onClick={() => {
 									changeFilter(element);

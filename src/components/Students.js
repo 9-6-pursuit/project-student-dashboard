@@ -6,7 +6,7 @@ import Student from "./Student";
 function Students(props) {
 	return (
 		<div className="students">
-			<h2>
+			<h2 className="cohort-title">
 				{props.filter === "All Students"
 					? props.filter
 					: props.filter.replace(
@@ -38,15 +38,13 @@ function Students(props) {
 								student={element}></Student>
 						);
 				  })
-				: props.cohorts[props.filter].map(
-						(element) => {
-							return (
-								<Student
-									student={element}
-									key={element.id}></Student>
-							);
-						}
-				  )}
+				: props.cohorts[props.filter].map((element) => {
+						return (
+							<Student
+								student={element}
+								key={element.id}></Student>
+						);
+				  })}
 		</div>
 	);
 }

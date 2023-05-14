@@ -11,7 +11,7 @@ ul {
     align-items: center;
 }
 
-li {
+.dateLi {
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
@@ -25,4 +25,20 @@ button {
     border: none;
     width: 100%;
     text-align: left;
+}
+
+.dateLi:hover {
+    animation: slide-right 0.4s linear forwards;
+    background-color: beige;
+}
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(10px)
+    }
 }
