@@ -41,8 +41,8 @@ function Students({ students, title, isOnTrackToGraduate }) {
                       {student.names.preferredName} {student.names.surname}
                     </h3>
                     {/* {isOnTrackToGraduate(student)} */}
-                    <p className="card-text">{student.username}</p>
-                    <p className="card-text">
+                    <p>{student.username}</p>
+                    <p>
                       <span style={{ color: "rgb(91, 148, 111)" }}>
                         Birthday:
                       </span>{" "}
@@ -53,9 +53,9 @@ function Students({ students, title, isOnTrackToGraduate }) {
                       className="card-text"
                       onClick={() => toggleShowMore(student.id)}
                     >
-                      <span style={{ color: "rgb(91, 148, 111)" }}>
+    
                         {isShowMore ? "Show Less..." : "Show More..."}
-                      </span>
+                      
                     </p>
                     {/* {isOnTrackToGraduate(student)} */}
                   </div>

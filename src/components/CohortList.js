@@ -52,7 +52,7 @@ function CohortList({ students, setSelectedCohort, formatCohortCode }) {
         {/* <thead>
           <tr>Choose a Class by Start Date</tr>
           </thead> */}
-        <tbody>
+        <tbody className="cohort-list">
           {cohortCodes.map((cohortCode) => {
             if (cohortCode === "All Students") {
               return (

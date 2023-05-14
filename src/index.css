@@ -95,3 +95,12 @@ ul {
 .custom {
 margin-left: 250px;
 }
+
+.card-text {
+  cursor: pointer;
+  color: rgb(91, 148, 111);
+}
+
+.cohort-list {
+  cursor: pointer;
+}
