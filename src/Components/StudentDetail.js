@@ -24,10 +24,14 @@ function StudentDetail({student}) {
 
       <ul className="Certifications">
       <h3>Certifications</h3>
-      <li>Resume: </li>
-      <li>Linkedin</li>
-      <li>Mock Interview:</li>
-      <li>Github:</li>
+             <li>Resume: {student.certifications.resume ? "Yes" : "No"}</li>
+              <li>
+                LinkedIn: {student.certifications.linkedin ? "Yes" : "No"}
+              </li>
+              <li>Github: {student.certifications.github ? "Yes" : "No"}</li>
+              <li>
+                Mock Interview: {student.certifications.mockInterview ? "Yes" : "No"}
+              </li>
       </ul>
 
       </div>
