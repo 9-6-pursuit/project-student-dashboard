@@ -35,9 +35,9 @@ function StudentCard({ student }) {
           <em className="info-element">{student.username}</em>
           <p className="info-element"><span>Birthday:</span> {convertedDate}</p>
           {showDetail ?
-            <a className="show-detail" onClick={toggleShowDetail} >Show Less...</a>
+            <p className="show-detail" onClick={toggleShowDetail} >Show Less...</p>
             : 
-            <a className="show-detail" onClick={toggleShowDetail} >Show More...</a>
+            <p className="show-detail" onClick={toggleShowDetail} >Show More...</p>
           }
         </div>
         <div id="track">

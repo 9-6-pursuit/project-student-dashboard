@@ -69,8 +69,9 @@ img {
 }
 
 .show-detail {
-    cursor: pointer;
     color: blue;
+    cursor: pointer;
+    width: 100px;
 }
 
 .show-detail:hover {
