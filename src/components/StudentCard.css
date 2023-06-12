@@ -1,0 +1,10 @@
+.student-card{
+    border: 6px;
+    border-color: #5b946e;
+}
+
+.student-card img{
+    margin-right: 30px;
+    height: 100px;
+    width: 100px;
+}
