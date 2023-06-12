@@ -1,0 +1,92 @@
+.student {
+    border: 2px solid rgb(83, 145, 111);
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: start;
+}
+
+.student img {
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+}
+img:hover{
+    animation: shadow-drop-center 0.4s linear forwards
+}
+
+.student:hover {
+    background-color: bisque;
+}
+
+a {
+    color: rgb(83, 145, 111);
+}
+
+.student div * {
+    margin: 2px;
+}
+
+.student div a {
+    display: block;
+    margin-top: 20px;
+}
+
+.student div {
+    margin-left: 20px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px;
+    width: 100%;
+}
+
+.details div {
+    margin: 0px;
+}
+
+.details ul {
+    font-size: 14px;
+    width: 100%;
+}
+
+.details li {
+    margin: 10px 0px;
+}
+
+.porcentGreen {
+    color: green;
+}
+
+.porcentYellow {
+    color: yellow;
+}
+
+.porcentRed {
+    color: red;
+}
+
+.leftSpamStudent {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 30px;
+}
+
+
+@keyframes shadow-drop-center {
+    0% {
+        box-shadow: 0 0 0 0 transparent
+    }
+
+    100% {
+        box-shadow: 0 0 30px 0 rgba(0, 255, 42, 0.55)
+    }
+}
