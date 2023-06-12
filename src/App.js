@@ -34,10 +34,13 @@ function App() {
     <div>
       <Header />
       <section class = "main-page-content">
+        <aside class = "cohort-component">
         <CohortList 
           filterStudentsbyCohort = {filterStudentsbyCohort} 
           cohorts = {getCohorts(studentsData)} 
           resetStudentView = {resetStudentView} />
+
+        </aside>
         <StudentsList students = {displayedStudents} dahCohort = {dahCohort} />
       </section>
     </div>

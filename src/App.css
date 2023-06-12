@@ -5,10 +5,16 @@
 }
 
 .cohort-list{
-        border-bottom: 1px solid #5b946e;
-        padding: 1rem;  
-        cursor: pointer; 
+    border-bottom: 1px solid #5b946e;
+    border-bottom-width: 1px;
+    padding: 1rem;  
+    cursor: pointer; 
 }
+
+.cohort-component{
+    width: 95%;
+}
+
 
 ul {
     list-style: none;
@@ -33,4 +39,7 @@ span{
     padding: 10px;
     margin-bottom: 10px;
 }
-  
+
+.start-date{
+    text-align: center;
+}

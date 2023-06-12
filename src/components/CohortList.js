@@ -4,7 +4,7 @@ function CohortList({ cohorts,filterStudentsbyCohort, resetStudentView }){
 
     return (
         <div>
-            <h3>Choose a Class by Start Date</h3>
+            <h3 className="start-date">Choose a Class by Start Date</h3>
             <ul>
                 <li className="cohort-list" onClick={resetStudentView}>All Students</li>
                 {cohorts.map((cohort)=>{
