@@ -1,12 +1,18 @@
 import { useState } from "react";
-import CohortList from "./CohortList.js";
-import Header from "./Header.js"
-import StudentsList from "./StudentsList.js";
+import CohortList from "./components/CohortList.js";
+import Header from "./components/Header.js"
+import StudentsList from "./components/StudentsList.js";
 import studentsData from "./data/data.json"
 import "./App.css"
 
 function App() {
   const [displayedStudents, setDisplayedStudents] = useState(studentsData);
+  const [dahCohort, setDahCohort] = useState("All Students")
+
+  function resetStudentView(){
+    setDahCohort("All Students")
+    setDisplayedStudents(()=>[...studentsData])
+  }
 
   const getCohorts = (studentsList) =>{
     let cohortCounter = {}
@@ -30,8 +36,9 @@ function App() {
       <section class = "main-page-content">
         <CohortList 
           filterStudentsbyCohort = {filterStudentsbyCohort} 
-          cohorts = {getCohorts(studentsData)} />
-        <StudentsList students = {displayedStudents} />
+          cohorts = {getCohorts(studentsData)} 
+          resetStudentView = {resetStudentView} />
+        <StudentsList students = {displayedStudents} dahCohort = {dahCohort} />
       </section>
     </div>
   );

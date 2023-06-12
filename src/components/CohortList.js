@@ -1,9 +1,12 @@
-function CohortList({ cohorts,filterStudentsbyCohort }){
+import React, { useState } from "react"
+
+function CohortList({ cohorts,filterStudentsbyCohort, resetStudentView }){
+
     return (
         <div>
             <h3>Choose a Class by Start Date</h3>
             <ul>
-                <li className="cohort-list">All Students</li>
+                <li className="cohort-list" onClick={resetStudentView}>All Students</li>
                 {cohorts.map((cohort)=>{
                     return(
                         <li className="cohort-list" onClick={()=>{
