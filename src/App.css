@@ -11,6 +11,12 @@
     cursor: pointer; 
 }
 
+.cohort-list:hover{
+    color: darkgreen;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
 .cohort-component{
     width: 95%;
 }
@@ -38,6 +44,16 @@ span{
     border: 1px solid rgb(16, 108, 16);
     padding: 10px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+.ontrack{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    padding-top: 15px;
+
 }
 
 .start-date{

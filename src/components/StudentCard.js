@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./StudentCard.css"
 import StudentDetail from "./StudentDetail"
+import Comments from "./Comments";
 
 
 function StudentCard({student}){
@@ -8,6 +9,27 @@ function StudentCard({student}){
     const toggleShowMore = () => {
         setShowMore(!showMore)
     }
+
+    let current_total = student.codewars.current.total
+    let resume = student.certifications.resume
+    let linkedIn = student.certifications.linkedin
+    let interview = student.certifications.mockInterview
+    let gitHub = student.certifications.github
+
+    function onTrack(){
+        if(current_total > 600 && 
+            resume === true && 
+            linkedIn === true && 
+            interview === true && 
+            gitHub === true){
+            return(
+                <p className="ontrack"><span>On Track to Graduate</span></p>
+            )
+        }
+    }
+
+    
+
     return( 
         <div className="student-card">
             <img src = {student.profilePhoto}></img>
@@ -24,7 +46,10 @@ function StudentCard({student}){
                 ):(
                     <a className="show-more-button" onClick = {toggleShowMore}><span className="underline">Show More...</span></a>
 
-                )}              
+                )}   
+
+                {onTrack()} 
+            <Comments />              
             </div>
         </div>
     )
