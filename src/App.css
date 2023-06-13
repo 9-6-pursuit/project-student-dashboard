@@ -1,0 +1,68 @@
+.main-page-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 10px;
+}
+
+.cohort-list{
+    border-bottom: 1px solid #5b946e;
+    border-bottom-width: 1px;
+    padding: 1rem;  
+    cursor: pointer; 
+}
+
+.cohort-list:hover{
+    color: darkgreen;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+.cohort-component{
+    width: 95%;
+}
+
+
+ul {
+    list-style: none;
+  }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+span{
+    color: rgb(16, 108, 16);
+}
+
+.underline {
+    text-decoration: underline;
+  }
+
+.student-card{
+    border: 1px solid rgb(16, 108, 16);
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ontrack{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    padding-top: 15px;
+
+}
+
+.start-date{
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }

@@ -1,0 +1,21 @@
+input[type=text] {
+    width: 78%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+    border: 2px solid rgb(16, 108, 16);
+    border-radius: 4px;
+  }
+  
+  .comment-section{
+    margin: 20px;
+  }
+
+  .input{
+    margin-bottom: 5px;
+  }
+
+  .square{
+    list-style-type: square;
+  }
