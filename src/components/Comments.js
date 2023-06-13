@@ -1,38 +1,55 @@
 import { useState } from 'react';
 
+import Button from 'react-bootstrap/Button';
+import "./Comments.css"
+
+
 
 const Comments = () => {
+    const [name, setName] = useState('');
+    const [comment, setComment] = useState('');
+    const [commentsList, setCommentsList] = useState([]);
 
-  const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState('');
-  const [name, setName] = useState('');
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+    };
 
-  const handleAddComment = () => {
-    setComments([...comments, { text: newComment, name: name }]);
-    setNewComment('');
-    setName('');
-  }
+    const handleCommentChange = (event) => {
+        setComment(event.target.value);
+    };
 
-  return (
-    <div className='comments'>
+    const handleAddComment = () => {
+        if (name.trim() !== '' && comment.trim() !== '') {
+            const newComment = `${name} says, "${comment}"`;
+            setCommentsList([...commentsList, newComment]);
+            setName('');
+            setComment('');
+        }
+    };
+    return (
+        <div className='comment-section'>
+            <h5>1-on-1 Notes</h5>
+            <input type="text" className='input' value={name} onChange={handleNameChange} placeholder="Your Name" />
+            <input type="text" className='input' value={comment} onChange={handleCommentChange} placeholder="Your Comment" />
+            <Button variant="success" onClick={handleAddComment}>Add Comment</Button>
 
-      <input 
-        placeholder="Your Name"
-        value={name} 
-        onChange={event => setName(event.target.value)} 
-      />
-      <input 
-        placeholder="Your Comment"
-        value={newComment} 
-        onChange={event => setNewComment(event.target.value)} 
-      />
-      <button onClick={handleAddComment}>Add Comment</button>
-      {comments.map((comment, index) => (
-        <div key={index}>
+            <div>
+                {commentsList.map((comment, index) => (
+                    <li className='square' key={index}>{comment}</li>
+                ))}
+            </div>
         </div>
-      ))}
-    </div>
-  );
+    );
+
+
+
+
+
+
+
+
+
+
 };
 
 

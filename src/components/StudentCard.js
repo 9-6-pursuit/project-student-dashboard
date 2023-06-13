@@ -28,8 +28,6 @@ function StudentCard({student}){
         }
     }
 
-    
-
     return( 
         <div className="student-card">
             <img src = {student.profilePhoto}></img>
@@ -45,9 +43,7 @@ function StudentCard({student}){
                     </div>
                 ):(
                     <a className="show-more-button" onClick = {toggleShowMore}><span className="underline">Show More...</span></a>
-
                 )}   
-
                 {onTrack()} 
             <Comments />              
             </div>
