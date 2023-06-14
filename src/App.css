@@ -1,0 +1,58 @@
+.App {
+    display: grid;
+    grid-template-areas: "h1 h1 h1"
+      "cohorts students students";
+    /* find correct font later */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  
+  header {
+    grid-area: h1;
+    background-color: #5B946E;
+    color: white;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Cohorts {
+    grid-area: cohorts;
+    border: 1px solid black;
+    margin-right: 30px;
+  }
+  
+  .Students {
+    grid-area: students;
+    border: 1px solid black;
+  }
+
+  .Cohorts h2 {
+    text-align: center;
+  }
+  .profile {
+    border: 2px solid #5B946E;
+  }
+  .profile-pic {
+    height:100px;
+    border-radius: 5%;
+  }
+  span {
+    color: #5B946E;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .cohort-list li:hover {
+    cursor: pointer;
+  }
+  
+  .cohort-list li {
+    border-bottom: 2px solid #5B946E;
+    padding: 20px 10px;
+  }
