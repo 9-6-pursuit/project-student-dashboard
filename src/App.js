@@ -25,9 +25,9 @@ function App() {
     return filteredList
   }
 
-  console.log(data)
+  //console.log(data)
   return (
-    <div>
+    <div className="app">
        <Header />
        <section className="main-page-content" />
        <CohortList filterStudentsByCohort={filterStudentsByCohort}
