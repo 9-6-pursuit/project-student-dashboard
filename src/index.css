@@ -1,4 +1,4 @@
-/* .main-header {
+.main-header {
     display: flex;
     background-color: rgb(91, 148, 111);
     justify-content: center;
@@ -11,12 +11,12 @@
     font-size: 16px;
   }
   
-  /* .green {
+  .green {
     color: rgb(91, 148, 111);
-  } */
+  }
   
-  /* studentCard box */
-  /* .card-container {
+  studentCard box 
+  .card-container {
     display: flex;
     flex-direction: row;
     align-items: top;
@@ -28,16 +28,16 @@
     height: 170px;
   }
   
-   /* studentimg */
-  /* .card-container img {
+  studentimg
+  .card-container img {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
     width: 100px;
     height: 100px;
-    object-fit: cover; */
+    object-fit: cover; 
      /* can these 2 margins and padding be combined */
-    /* margin-right: 10px;
+    margin-right: 10px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 10px;
@@ -46,9 +46,9 @@
   .card-info {
     display: flex;
     flex-direction: column;
-  } */
-  /* StudentTable */
-  /* .row {
+  } 
+  StudentTable 
+  .row {
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
@@ -59,53 +59,6 @@
     width: 100%;
     overflow-x: auto;
     border-block-end-width: 100;
-  } */
+  } 
 
-  /* .table thread {
-    width: 100percent
-  } */
-  /* StudentTable left align */
-  /* .table table {
-    margin: 35px auto;
-    width: 90%;
-    /* border-style: dotted; */
-    /* border-collapse: collapse;
-    } */
-    
-    /* adds borders around all items */
-    /* * {
-      outline: 1px solid #f10f0f;
-    } */
-  
-  /* .table td,
-  .table th 
-  {
-    padding: 16px;
-    text-align: left;
-    vertical-align: top;
-    border-bottom: 2px solid rgb(91, 148, 111);
-    border-width: 3px;
-    width: 100;
-   
-  } */
-  /* <th> tag defines a header cell, <td> defines a cell, <tr> defines a row in a table*/
-  /* @media (max-width: 268px) {
-    .table td,
-    .table th
-    ,table tr {
-      padding: 4px;
-    } */
-  
-    /* .table td:first-child,
-    .table th:first-child 
-    .table tr:first-child {
-      padding-left: 30px;
-    }
-  }
-  
-  ul {
-    list-style: none;
-    margin: 40px;
-    padding: 10px;
-  } */
   

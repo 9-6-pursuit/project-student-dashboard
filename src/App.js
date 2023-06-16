@@ -1,45 +1,33 @@
-// import Header from "./Components/Header.js"
-// import StudentsList from "./Components/StudentsList.js"
-// import data from "./data/data.json"; 
-
-// function App() {
-//   return (
-//       <div>
-//       <Header />
-//       <StudentsList students={data}/>
-//       {/* <h1>This is the Header component</h1> */}
-//     </div>
-//   );
-// }
-
-// export default App;
-
-// import Students from './components/StudentList'
-
-
-// w opt
-import { useState } from "react";
-import studentsData from "./data/data.json";
+import data from "./data/data.json";
+import CohortList from "./components/CohortList";
 import Header from "./components/Header";
 import StudentsList from "./components/StudentsList";
-import Sidebar from "./components/SideBar";
-
-import "../src/App.css"
+import './App.css'
+import { useState } from "react";
 
 function App() {
-  const [cohortFilter, setCohortFilter] = useState("All Students");
-
+  const [heading, setHeading] = useState('All Students')
+  const [students, setStudents] = useState(data)
   return (
-    <>
+    <main>
       <Header />
+<div className="container">
+      <div className="main-page-content mt-3">
+        <div className="">
+          <CohortList students={data} setHeading={setHeading} setStudents={setStudents}/>
+        </div>
+        <div className="">
+          <StudentsList students={students} heading={heading}/>
+        </div>
 
-      <div className="container">
-        <Sidebar studentsData={studentsData} setCohortFilter={setCohortFilter} />
-        <StudentsList studentsData={studentsData} cohortFilter={cohortFilter} />
-      </div>
+    </div>
 
-    </>
+</div>
+
+    </main>
   );
 }
 
 export default App;
+
+

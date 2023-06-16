@@ -1,117 +1,70 @@
-// import StudentCards from './StudentTable';
-// import "./Students.css";
-// export default function Students ({student, cohorts}){
-//   const filteredStudents = student.filter(({cohort}) => {
-//     return cohort.cohortCode === cohorts
-//   })
-
-//     return(
-//         <ul className='card'>
-//             <h2>{cohorts}</h2>
-//             <p>Total Students: 
-//               {cohorts === 'All Students' ? student.length: filteredStudents.length}
-//               </p>
-//             {cohorts === 'All Students' ? student.map(({ names, profilePhoto, id, username, dob, certifications, codewars, cohort, notes}) => {
-//         return (
-//           <div key={id}>
-//             <StudentCards
-//               names={names}
-//               profilePhoto={profilePhoto}
-//               username={username}
-//               dob={dob}
-//               certifications={certifications}
-//               codewars={codewars}
-//               cohort={cohort}
-//               notes={notes}
-//             />
-//           </div>
-//         );
-//       }) : filteredStudents.map(({ names, profilePhoto, id, username, dob, certifications, codewars, cohort, notes}) => {
-//         return (
-//           <div key={id}>
-//             <StudentCards
-//               names={names}
-//               profilePhoto={profilePhoto}
-//               username={username}
-//               dob={dob}
-//               certifications={certifications}
-//               codewars={codewars}
-//               cohort={cohort}
-//               notes={notes}
-//             />
-//           </div>
-//         );
-//       })}
-//         </ul>
-//     )
-// }
-
-
-// w opt
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import StudentDetail from "./StudentDetail";
+import Notes from "./Notes"
 import "./StudentCard.css";
-import ShowDetail from "./ShowDetail";
 
-function StudentCard({studentsData}) {
-  const [showMore, setShowMore] = useState(false);
+function StudentCard({student}){
 
-  const toggleShowMore = () => {
-    setShowMore(!showMore);
-  };
+    const [showBoolean, setShowBoolean]= useState(false)
+    const [show, setShow] = useState("Show more...")
+    const [graduate, setGraduate] = useState('')
 
-  const trackGraduate = () => {
-    const { certifications, codewars } = studentsData;
-    return (
-      certifications.resume &&
-      certifications.linkedin &&
-      certifications.github &&
-      certifications.mockInterview &&
-      codewars.current.total > 600
+    function handleClick(){
+        if(showBoolean === false){
+            setShowBoolean(true)
+            setShow("Show Less..")
+        }
+        else{
+            setShowBoolean(false)
+            setShow('Show More...')
+        }
+    }
+    useEffect(()=>{
+        if(student.certifications.resume === true 
+            && student.certifications.linkedin === true
+            && student.certifications.github === true
+            && student.certifications.mockInterview === true){
+            setGraduate(true)
+        }
+    },[student])
+
+    let fixedDate = student.dob.split('/')
+    let month = fixedDate[0]
+
+    const date = new Date();
+    date.setMonth(month - 1)
+    let newMonth = date.toLocaleString('en-US', {month: 'long'})
+
+
+    return(
+        <div className="students-card row">
+            <div className='row'>
+                <img className="profile-pic" src={student.profilePhoto} alt={student.id} width="150" height="150"/>
+                <div className="profile-info col">
+                    <h3>{student.names.preferredName} {student.names.middleName[0]}. {student.names.surname}</h3>
+                    {graduate && 
+                        <div className="top-right">On Track to Graduate</div>}
+                    <div>{student.username}</div>
+                    <div><span className="text-success">Birthday:</span> {newMonth} {fixedDate[1]}, {fixedDate[2]}</div>
+                    <br></br>
+                    <button onClick={handleClick} className="btn text-success btn-link ">{show}</button>   
+                </div>
+                <div className="row pl-5 pt-3">
+                    <section className="student-info">
+                            {showBoolean &&(
+                            <StudentDetail student={student}/>
+                            )}
+                        </section> 
+
+                </div>
+                
+                <section className="notes">
+                    <Notes/>
+                </section>
+                
+            </div>
+
+        </div>
     );
-  };
-
-  const middleInitial = studentsData.names.middleName.charAt(0) + '.';
-
-  return (
-    <div className="students-card primary-border-color">
-
-      <div className="students-card-row">
-        <img className="profile-image-height" 
-            src={studentsData.profilePhoto} 
-            alt={`${studentsData.names.preferredName} ${middleInitial} ${studentsData.names.surname}`} 
-        />
-        <ul className="students-card-list">
-          <li className="students-name cabin-fonts">
-            {studentsData.names.preferredName} {middleInitial} {studentsData.names.surname}
-          </li>
-          <li>
-            <a className="decoration-none" href="/">
-              {studentsData.username}
-            </a>
-          </li>
-          <li>
-            <span className="primary-text-color">Birthday:</span> {studentsData.dob}
-          </li>
-        </ul>
-
-        {trackGraduate() && (
-          <p className="on-track-to-graduate primary-text-color">On Track to Graduate</p>
-        )}
-      </div>
-
-      <button className="primary-text-color show-more" onClick={toggleShowMore}>
-          {showMore ? "Show Less..." : "Show More..."}
-        </button>
-        {showMore && <ShowDetail studentsData={studentsData} />}
-
-    </div>
-  );
 }
-
-
 export default StudentCard;
-
-
-
-
-
