@@ -1,0 +1,65 @@
+.student-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.student-details li {
+    list-style: none;
+    margin-left: -40px;
+    line-height: 1.5;
+}
+
+.student-details h5 {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.student-details {
+    border-bottom: 2px solid green;
+}
+.codewars h5 {
+    margin-left: 0px
+}
+
+.scores ul, h5 {
+    margin-left: 50px;
+}
+
+.certifications ul, h5 {
+    margin-left: 50px;
+}
+
+.green {
+    color: green;
+}
+  
+.yellow {
+    color: rgb(216, 220, 0);
+}
+  
+.red {
+    color: red;
+}
+.comment h5 {
+    margin-left: -5px;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid palevioletred;
+    line-height: 40px;
+    padding: 10px;
+}
+
+#form button {
+    size: 10px;
+    margin-top: 10px;
+    background-color: rgb(138, 247, 210);
+}
+
+span {
+    font-weight: 600;
+}

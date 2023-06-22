@@ -1,0 +1,33 @@
+.student-card {
+    border: 2px solid green;
+    margin: 0px 20px 30px 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.student-card img {
+    height: 150px;
+}
+
+.student-info {
+    margin-left: 20px;
+}
+
+.graduation-status {
+    margin-left: 50px;
+    margin-right: 2px;
+}
+
+.graduation-status h5 {
+    border: 1px solid green;
+    padding: 5px;
+}
+
+
+
